@@ -1,1 +1,2940 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V & M Sanitary | Smart Locks & Hotel Access Control Catalogue</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Crisp Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        vmRed: {
+                            DEFAULT: '#d32f2f',
+                            dark: '#b71c1c',
+                            light: '#ffebee'
+                        },
+                        vmNavy: {
+                            DEFAULT: '#1a237e',
+                            dark: '#0d134a',
+                            light: '#e8eaf6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar & utility refinements */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .blueprint-grid {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 16px 16px;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-vmRed selection:text-white">
 
+    <!-- Top Trust & Contact Bar -->
+    <div class="bg-vmNavy text-white text-xs py-2 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center flex-wrap gap-3 sm:gap-5">
+                <span class="inline-flex items-center gap-1.5 font-medium text-emerald-300">
+                    <i class="fa-solid fa-circle-check"></i> GST Verified Supplier
+                </span>
+                <span class="inline-flex items-center gap-1.5 font-medium text-amber-300">
+                    <i class="fa-solid fa-shield-halved"></i> TrustSEAL Certified
+                </span>
+                <span class="hidden md:inline-flex items-center gap-1.5 text-slate-300">
+                    <i class="fa-solid fa-location-dot text-vmRed"></i> Gota, Ahmedabad, Gujarat 382481
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+918487948220" class="hover:text-amber-300 transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-phone text-vmRed"></i> +91 84879 48220
+                </a>
+                <a href="https://wa.me/918487948220?text=Hello%20V%20%26%20M%20Sanitary%2C%20I%20would%20like%20to%20request%20your%20Smart%20Locks%20%26%20Hotel%20Access%20Control%20B2B%2FB2C%20price%20list." target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-1 rounded-full font-semibold transition flex items-center gap-1">
+                    <i class="fa-brands fa-whatsapp"></i> Bulk Inquiry
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Sticky Header -->
+    <header class="sticky top-0 z-40 glass-header border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+            <!-- Brand Identity -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-vmRed to-vmNavy flex items-center justify-center text-white font-display font-extrabold text-lg shadow-md group-hover:scale-105 transition">
+                    V&amp;M
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-display font-extrabold text-xl tracking-tight text-vmNavy">V &amp; M <span class="text-vmRed">Sanitary</span></span>
+                    </div>
+                    <p class="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Smart Locks • Hotel Access • Luxury Hardware</p>
+                </div>
+            </a>
+
+            <!-- Desktop Quick Nav -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                <a href="#catalogue-section" class="hover:text-vmRed transition">Product Catalogue</a>
+                <a href="#datasheet-section" class="hover:text-vmRed transition">Technical Specs</a>
+                <a href="#expertise-section" class="hover:text-vmRed transition">Hospitality &amp; Sanitaryware</a>
+                <a href="#contact-footer" class="hover:text-vmRed transition">Showroom Address</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-2.5">
+                <button onclick="openPhotoGuideModal()" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 transition" title="How to upload or deploy product images">
+                    <i class="fa-solid fa-camera text-vmNavy"></i> Image Guide
+                </button>
+                <a href="https://wa.me/918487948220?text=Hello%20V%20%26%20M%20Sanitary%2C%20I%20am%20interested%20in%20Smart%20Locks%20%26%20Hotel%20Access%20Control%20solutions." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-vmRed hover:bg-vmRed-dark text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Get Quote</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-vmNavy-dark via-vmNavy to-slate-900 text-white py-12 sm:py-16">
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 1.2px, transparent 1.2px); background-size: 24px 24px;"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-5">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-amber-300">
+                        <i class="fa-solid fa-hotel"></i> Complete B2B &amp; B2C Architectural Hardware Catalogue
+                    </div>
+                    <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                        Smart Locks &amp; Intelligent <span class="text-red-400">Hotel Access Control</span> Systems
+                    </h1>
+                    <p class="text-slate-200 text-sm sm:text-base max-w-2xl leading-relaxed">
+                        Authorized supplier in Ahmedabad for TTHotel/TTLock App Locks, 3D Face Recognition Smart Locks, Mifare 13.56MHz &amp; Temic 125KHz RFID Hotel Locks, Split Locks, Energy Saving Switches, DND Doorplates, and SS304 Mortises — alongside our curated range of luxury sanitaryware.
+                    </p>
+                    <div class="flex flex-wrap gap-3 pt-1">
+                        <a href="#catalogue-section" class="bg-vmRed hover:bg-vmRed-dark text-white font-bold text-sm px-6 py-3 rounded-xl shadow-lg shadow-red-900/30 transition inline-flex items-center gap-2">
+                            <i class="fa-solid fa-grid-2"></i> Explore <span id="hero-total-count">145+</span> Models
+                        </a>
+                        <a href="https://wa.me/918487948220?text=Hello%20V%20%26%20M%20Sanitary%2C%20please%20share%20wholesale%2Fproject%20pricing%20for%20Hotel%20%26%20Smart%20Locks." target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold text-sm px-5 py-3 rounded-xl transition inline-flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> Request Project Quotation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Summary Stats Card -->
+                <div class="lg:col-span-4 bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 sm:p-6 space-y-4">
+                    <div class="flex items-center justify-between border-b border-white/15 pb-3">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-300">V &amp; M Assurance</span>
+                        <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold">Ready Dispatch</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 text-center">
+                        <div class="bg-white/5 rounded-xl p-3 border border-white/10">
+                            <div class="font-display font-extrabold text-2xl text-white" id="stat-model-count">147</div>
+                            <div class="text-[11px] text-slate-300 mt-0.5">Catalogue SKUs</div>
+                        </div>
+                        <div class="bg-white/5 rounded-xl p-3 border border-white/10">
+                            <div class="font-display font-extrabold text-2xl text-amber-300">7</div>
+                            <div class="text-[11px] text-slate-300 mt-0.5">Product Divisions</div>
+                        </div>
+                        <div class="bg-white/5 rounded-xl p-3 border border-white/10">
+                            <div class="font-display font-extrabold text-lg text-emerald-300">SS304 / Alloy</div>
+                            <div class="text-[11px] text-slate-300 mt-0.5">Heavy-Duty Build</div>
+                        </div>
+                        <div class="bg-white/5 rounded-xl p-3 border border-white/10">
+                            <div class="font-display font-extrabold text-lg text-red-300">B2B &amp; B2C</div>
+                            <div class="text-[11px] text-slate-300 mt-0.5">Hotels, Villas &amp; Homes</div>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-slate-300 leading-relaxed">
+                        <i class="fa-solid fa-circle-info text-amber-300 mr-1"></i>
+                        <strong>Interactive Preview:</strong> Click any product image box below to upload &amp; preview your actual product photos directly in the browser.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Catalogue Section -->
+    <main id="catalogue-section" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+        
+        <!-- Search & Filter Control Panel -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-5 mb-6 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3.5 items-center">
+                <!-- Search Input -->
+                <div class="md:col-span-6 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="search-input" placeholder="Search by Model Code (e.g. TT100, RF860, ZW718, SW01, DP05) or spec..." class="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-vmNavy focus:border-vmNavy transition">
+                    <button id="clear-search-btn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-vmRed">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Unlock Method / Technology Filter -->
+                <div class="md:col-span-4">
+                    <div class="relative">
+                        <i class="fa-solid fa-key absolute left-3.5 top-1/2 -translate-y-1/2 text-vmRed text-xs"></i>
+                        <select id="unlock-filter" class="w-full pl-9 pr-8 py-2.5 rounded-xl border border-slate-300 text-sm bg-white font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-vmNavy">
+                            <option value="ALL">All Technologies &amp; Unlock Methods</option>
+                            <option value="TTHotel / TTLock App">TTHotel / TTLock Bluetooth &amp; WiFi App</option>
+                            <option value="3D Face Recognition">3D Face Recognition / Palm Vein</option>
+                            <option value="Fingerprint">Biometric Fingerprint</option>
+                            <option value="Mifare 13.56MHz">Mifare 13.56MHz Hotel Card</option>
+                            <option value="Temic 125KHz">Temic 125KHz Hotel Card</option>
+                            <option value="Passcode">Digital Passcode / PIN</option>
+                            <option value="Energy Saving">Energy Saving Power Switch</option>
+                            <option value="DND / Doorplate">DND Doorplates &amp; Touch Switches</option>
+                            <option value="Mortise / Accessory">Mortise Bodies, Encoders &amp; Gateways</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Reset Filters Button -->
+                <div class="md:col-span-2 flex justify-end">
+                    <button onclick="resetAllFilters()" class="w-full py-2.5 px-4 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 text-sm font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-rotate-left"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 pt-1 border-t border-slate-100" id="category-tabs">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </div>
+
+        <!-- Results Status Bar -->
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+            <div class="text-sm text-slate-600">
+                Showing <span id="visible-count" class="font-bold text-vmNavy">0</span> of <span id="total-count" class="font-bold text-slate-800">0</span> products
+                <span id="active-category-label" class="ml-1 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-vmNavy-light text-vmNavy">All Categories</span>
+            </div>
+            <div class="text-xs text-slate-500 flex items-center gap-1.5">
+                <i class="fa-solid fa-upload text-vmRed"></i>
+                <span>Tip: Click any card's placeholder box to test-upload its photo</span>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            <!-- Product cards injected by JavaScript -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="hidden bg-white rounded-2xl border border-slate-200 p-12 text-center my-6">
+            <div class="w-16 h-16 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-800">No matching lock or accessory models found</h3>
+            <p class="text-sm text-slate-500 max-w-md mx-auto mt-1 mb-5">Try searching by another model code (e.g., TT100, RF860, ZW718, SW01, DP01) or reset your active category/technology filters.</p>
+            <button onclick="resetAllFilters()" class="bg-vmNavy hover:bg-vmNavy-dark text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition">
+                Show All Catalogue Products
+            </button>
+        </div>
+    </main>
+
+    <!-- Technical Lock Datasheet Summary Section -->
+    <section id="datasheet-section" class="bg-white border-y border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-vmRed">Engineering Standards</span>
+                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-vmNavy mt-1">Technical Lock Datasheet Summary</h2>
+                    <p class="text-sm text-slate-600 mt-1">Standard electrical, mechanical, and environmental specifications across our hotel &amp; residential smart lock series.</p>
+                </div>
+                <a href="https://wa.me/918487948220?text=Hello%20V%20%26%20M%20Sanitary%2C%20please%20share%20installation%20templates%20and%20technical%20datasheets%20for%20your%20Smart%20Locks." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-bold text-vmNavy hover:text-vmRed bg-vmNavy-light px-4 py-2.5 rounded-xl transition">
+                    <i class="fa-solid fa-file-pdf"></i> Request Mortise Cutout Templates on WhatsApp
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-vmNavy text-white flex items-center justify-center shrink-0 text-lg">
+                        <i class="fa-solid fa-temperature-half"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-slate-900">Working Temperature</h3>
+                        <p class="font-display font-extrabold text-lg text-vmRed mt-0.5">-20°C to +70°C</p>
+                        <p class="text-xs text-slate-500 mt-1">Humidity 20%–90% RH, anti-static &gt;15,000V protection for Indian climate conditions.</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-vmRed text-white flex items-center justify-center shrink-0 text-lg">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-slate-900">Power Supply &amp; Backup</h3>
+                        <p class="font-display font-extrabold text-lg text-vmNavy mt-0.5">4× AA Batteries (DC 6V)</p>
+                        <p class="text-xs text-slate-500 mt-1">10–12 months battery life (~10,000 openings), low-voltage alarm (&lt;4.8V) + Type-C/Key emergency backup.</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-vmNavy text-white flex items-center justify-center shrink-0 text-lg">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-slate-900">Card &amp; Biometric Speed</h3>
+                        <p class="font-display font-extrabold text-lg text-vmRed mt-0.5">Reading Time &lt; 1s</p>
+                        <p class="text-xs text-slate-500 mt-1">Ultra-fast response (&lt;0.5s semiconductor fingerprint / &lt;1s Mifare 13.56MHz &amp; Temic 125KHz induction 0–3cm).</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-vmRed text-white flex items-center justify-center shrink-0 text-lg">
+                        <i class="fa-solid fa-door-closed"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-slate-900">Door Thickness Fit</h3>
+                        <p class="font-display font-extrabold text-lg text-vmNavy mt-0.5">35mm – 60mm+</p>
+                        <p class="text-xs text-slate-500 mt-1">Compatible with wooden, flush, fire-rated &amp; metal doors using ANSI 5-latch, 2# Short, or EU 3585/4585/6085 mortises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Broader Expertise Banner (Sanitaryware & Smart Hospitality Hardware) -->
+    <section id="expertise-section" class="py-12 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-vmNavy to-vmNavy-dark rounded-3xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden">
+                <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="inline-block px-3 py-1 rounded-full bg-vmRed text-white text-xs font-bold uppercase tracking-wider">One-Stop Project Partner in Ahmedabad</span>
+                        <h2 class="font-display font-extrabold text-2xl sm:text-3xl leading-snug">
+                            Luxury Sanitaryware &amp; Complete Smart Hotel Hardware Solutions
+                        </h2>
+                        <p class="text-slate-200 text-sm leading-relaxed">
+                            Beyond intelligent access control, <strong>V &amp; M Sanitary</strong> is a trusted name in Gujarat for designer sanitaryware, bath fittings, architectural door hardware, and turnkey hospitality automation. Whether you are outfitting a 200-room hotel, corporate office, or luxury residence, we supply integrated hardware packages with GST billing and local technical support.
+                        </p>
+                        <div class="grid sm:grid-cols-3 gap-3 pt-2 text-xs">
+                            <div class="bg-white/10 rounded-xl p-3 border border-white/15">
+                                <i class="fa-solid fa-building-shield text-amber-300 text-base mb-1.5 block"></i>
+                                <strong class="block text-white">Hotel PMS Integration</strong>
+                                <span class="text-slate-300">TTHotel &amp; RFID front-desk encoder software setup</span>
+                            </div>
+                            <div class="bg-white/10 rounded-xl p-3 border border-white/15">
+                                <i class="fa-solid fa-faucet-drip text-sky-300 text-base mb-1.5 block"></i>
+                                <strong class="block text-white">Luxury Sanitaryware</strong>
+                                <span class="text-slate-300">Premium bathware &amp; washroom accessories</span>
+                            </div>
+                            <div class="bg-white/10 rounded-xl p-3 border border-white/15">
+                                <i class="fa-solid fa-truck-fast text-emerald-300 text-base mb-1.5 block"></i>
+                                <strong class="block text-white">Pan-India B2B Supply</strong>
+                                <span class="text-slate-300">Wholesale dispatch from Gota, Ahmedabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-white text-slate-800 rounded-2xl p-6 shadow-lg">
+                        <h3 class="font-display font-extrabold text-lg text-vmNavy mb-1">Request Bulk / Dealer Quote</h3>
+                        <p class="text-xs text-slate-500 mb-4">Send your project requirement directly to our Ahmedabad sales desk on WhatsApp.</p>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Project Type</label>
+                                <select id="quick-project-type" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-vmNavy">
+                                    <option value="Hotel / Resort Project (Bulk)">Hotel / Resort Project (Bulk)</option>
+                                    <option value="Residential Villa / Apartment">Residential Villa / Apartment</option>
+                                    <option value="Commercial Office / PG / Hostel">Commercial Office / PG / Hostel</option>
+                                    <option value="Dealer / Architect Inquiry">Dealer / Architect Inquiry</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Estimated Quantity / Models Needed</label>
+                                <input type="text" id="quick-project-notes" placeholder="e.g., 45 Hotel Locks + Energy Switches + DND Plates" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-vmNavy">
+                            </div>
+                            <button onclick="sendCustomWhatsAppInquiry()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm py-3 rounded-xl shadow transition flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Send Inquiry on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact-footer" class="bg-slate-900 text-slate-300 pt-12 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+                <!-- Col 1: Brand -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-vmRed flex items-center justify-center text-white font-display font-extrabold text-base">V&amp;M</div>
+                        <div>
+                            <div class="font-display font-extrabold text-lg text-white">V &amp; M Sanitary</div>
+                            <div class="text-[11px] text-slate-400">Ahmedabad, Gujarat</div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Authorized B2B &amp; B2C distributor for Smart Door Locks, Hotel RFID Access Control Systems, Energy Saving Switches, DND Doorplates, and Luxury Sanitaryware.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-[11px] font-semibold text-emerald-400">
+                            <i class="fa-solid fa-check-circle mr-1"></i>GST Verified
+                        </span>
+                        <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-[11px] font-semibold text-amber-400">
+                            <i class="fa-solid fa-award mr-1"></i>TrustSEAL
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Categories -->
+                <div>
+                    <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-3">Catalogue Divisions</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><button onclick="selectCategoryFromFooter('App & Smart Hotel Locks')" class="hover:text-white transition">App &amp; Smart Hotel Locks (TTHotel/TTLock)</button></li>
+                        <li><button onclick="selectCategoryFromFooter('Smart Face & Fingerprint Locks')" class="hover:text-white transition">Smart Face &amp; Fingerprint Locks</button></li>
+                        <li><button onclick="selectCategoryFromFooter('Mifare & Temic Hotel Locks')" class="hover:text-white transition">Mifare 13.56MHz &amp; Temic 125KHz Locks</button></li>
+                        <li><button onclick="selectCategoryFromFooter('Split & Automatic Hotel Locks')" class="hover:text-white transition">Split &amp; Automatic Hotel Locks</button></li>
+                        <li><button onclick="selectCategoryFromFooter('Energy Saving Switches')" class="hover:text-white transition">Hotel Energy Saving Switches</button></li>
+                        <li><button onclick="selectCategoryFromFooter('DND Doorplates & Control Switches')" class="hover:text-white transition">DND Doorplates &amp; Doorbells</button></li>
+                        <li><button onclick="selectCategoryFromFooter('System Accessories & Mortises')" class="hover:text-white transition">Encoders, Gateways &amp; SS304 Mortises</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Showroom Address -->
+                <div class="lg:col-span-2 space-y-3">
+                    <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-3">Showroom &amp; Dispatch Office</h4>
+                    <div class="bg-slate-800/70 border border-slate-700/80 rounded-2xl p-4 space-y-2.5 text-xs">
+                        <p class="flex items-start gap-2.5 text-slate-200">
+                            <i class="fa-solid fa-location-dot text-vmRed text-base mt-0.5"></i>
+                            <span><strong>V &amp; M Sanitary</strong><br>1, nr. Shreepad Residency, opp. Royal Lake View, Gota, Ahmedabad, Gujarat 382481, India</span>
+                        </p>
+                        <p class="flex items-center gap-2.5 text-slate-200">
+                            <i class="fa-solid fa-phone text-emerald-400"></i>
+                            <a href="tel:+918487948220" class="hover:underline font-semibold">+91 8487948220</a>
+                        </p>
+                        <p class="flex items-center gap-2.5 text-slate-200">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                            <a href="https://wa.me/918487948220" target="_blank" rel="noopener" class="hover:underline font-semibold text-emerald-400">Chat on WhatsApp: +91 84879 48220</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+                <p>&copy; <span id="current-year">2026</span> V &amp; M Sanitary, Ahmedabad. All Rights Reserved.</p>
+                <p>GST Verified • TrustSEAL Certified • Smart Access &amp; Luxury Sanitaryware</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918487948220?text=Hello%20V%20%26%20M%20Sanitary%2C%20I%20would%20like%20to%20inquire%20about%20Smart%20Locks%20%26%20Hotel%20Access%20Control%20products." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fixed bottom-5 right-5 z-50 group flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3 rounded-full shadow-2xl shadow-emerald-950/40 transition-all hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="font-bold text-xs sm:text-sm pr-1">WhatsApp Quote</span>
+    </a>
+
+    <!-- Product Full Specification Modal -->
+    <div id="spec-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/70 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-2xl w-full shadow-2xl border border-slate-200 overflow-hidden my-8 animate-[fadeIn_0.15s_ease-out]">
+            <!-- Modal Header -->
+            <div class="bg-vmNavy text-white px-6 py-4 flex items-center justify-between">
+                <div>
+                    <span id="modal-category-badge" class="text-[11px] font-bold uppercase tracking-wider bg-white/15 px-2.5 py-0.5 rounded-full text-amber-300">Category</span>
+                    <h3 id="modal-title" class="font-display font-extrabold text-xl mt-1">Model Code - Product Name</h3>
+                </div>
+                <button onclick="closeSpecModal()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-6 space-y-5 max-h-[80vh] overflow-y-auto">
+                <div class="grid sm:grid-cols-12 gap-5 items-center">
+                    <!-- Modal Image / Upload Box -->
+                    <div class="sm:col-span-5">
+                        <div id="modal-image-container" class="relative aspect-square rounded-2xl border-2 border-dashed border-slate-300 blueprint-grid bg-slate-50 flex flex-col items-center justify-center p-4 text-center overflow-hidden group cursor-pointer" onclick="triggerModalUpload()">
+                            <!-- Injected dynamically -->
+                        </div>
+                        <div class="mt-2 flex items-center justify-between text-[11px] text-slate-500 bg-slate-100 px-2.5 py-1.5 rounded-lg">
+                            <code id="modal-img-tag" class="font-mono text-vmNavy font-semibold truncate">&lt;img src="images/TT100.jpg"&gt;</code>
+                            <button onclick="copyImgTag()" class="text-vmRed hover:underline font-bold ml-2 shrink-0" title="Copy HTML img tag">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Key Details -->
+                    <div class="sm:col-span-7 space-y-3">
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-vmRed-light text-vmRed text-xs font-bold">
+                            <i class="fa-solid fa-tag"></i> Get Best Price / Bulk INR Quote
+                        </div>
+                        <p id="modal-description" class="text-sm text-slate-600 leading-relaxed"></p>
+                        
+                        <div class="bg-slate-50 rounded-xl border border-slate-200 divide-y divide-slate-200 text-xs">
+                            <div class="px-3.5 py-2.5 flex justify-between gap-3">
+                                <span class="font-semibold text-slate-500">Model Code</span>
+                                <span id="modal-code" class="font-bold text-vmNavy"></span>
+                            </div>
+                            <div class="px-3.5 py-2.5 flex justify-between gap-3">
+                                <span class="font-semibold text-slate-500">Material &amp; Finish</span>
+                                <span id="modal-material" class="font-semibold text-slate-800 text-right"></span>
+                            </div>
+                            <div class="px-3.5 py-2.5 flex justify-between gap-3">
+                                <span class="font-semibold text-slate-500">Available Colors</span>
+                                <span id="modal-colors" class="font-semibold text-slate-800 text-right"></span>
+                            </div>
+                            <div class="px-3.5 py-2.5 flex justify-between gap-3">
+                                <span class="font-semibold text-slate-500">Unlock / Function</span>
+                                <span id="modal-unlock" class="font-semibold text-slate-800 text-right"></span>
+                            </div>
+                            <div class="px-3.5 py-2.5 flex justify-between gap-3">
+                                <span class="font-semibold text-slate-500">Mortise / Spec</span>
+                                <span id="modal-mortise" class="font-semibold text-slate-800 text-right"></span>
+                            </div>
+                            <div class="px-3.5 py-2.5 flex justify-between gap-3">
+                                <span class="font-semibold text-slate-500">Recommended Usage</span>
+                                <span id="modal-usage" class="font-semibold text-slate-800 text-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="bg-slate-50 px-6 py-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+                <button onclick="closeSpecModal()" class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 text-xs font-bold hover:bg-slate-100 transition">
+                    Close Window
+                </button>
+                <a id="modal-whatsapp-btn" href="#" target="_blank" rel="noopener" class="flex-1 sm:flex-initial bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-6 py-2.5 rounded-xl shadow transition inline-flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Request Quote on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Deployment & Upload Guide Modal -->
+    <div id="guide-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/70 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full shadow-2xl border border-slate-200 overflow-hidden">
+            <div class="bg-vmRed text-white px-6 py-4 flex items-center justify-between">
+                <h3 class="font-display font-extrabold text-lg"><i class="fa-solid fa-images mr-2"></i>Product Image Placeholder Guide</h3>
+                <button onclick="closePhotoGuideModal()" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 space-y-4 text-sm text-slate-600">
+                <p>Every product card in this V &amp; M Sanitary catalogue includes a smart dual-mode image placeholder:</p>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 text-xs">
+                    <p><strong class="text-vmNavy">1. Live Browser Photo Preview:</strong> Click directly on any product card's placeholder box to select a photo from your computer or phone. It uses <code class="bg-slate-200 px-1 rounded">FileReader</code> to preview immediately on the card.</p>
+                    <p><strong class="text-vmNavy">2. Production Website Deployment:</strong> Create an <code class="bg-slate-200 px-1 rounded">images/</code> folder next to this HTML file and save each product image using its exact model code (e.g., <code class="bg-slate-200 px-1 rounded">images/TT100.jpg</code>, <code class="bg-slate-200 px-1 rounded">images/RF860.jpg</code>). Each card displays its exact <code class="bg-slate-200 px-1 rounded">&lt;img&gt;</code> filename for effortless deployment.</p>
+                </div>
+                <div class="flex justify-end">
+                    <button onclick="closePhotoGuideModal()" class="bg-vmNavy text-white font-bold text-xs px-5 py-2.5 rounded-xl">Got It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-msg" class="fixed bottom-20 right-5 z-50 hidden bg-slate-900 text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-lg border border-slate-700 items-center gap-2">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toast-text">Copied to clipboard!</span>
+    </div>
+
+    <!-- Hidden Shared File Input for Direct Card Photo Upload -->
+    <input type="file" id="shared-image-uploader" accept="image/*" class="hidden">
+
+    <script>
+        // =========================================================================
+        // V & M SANITARY - COMPLETE PRODUCT DATABASE (ALL 7 DIVISIONS & ALL MODELS)
+        // Strictly sanitized: zero third-party Chinese factory references.
+        // =========================================================================
+        const PRODUCTS = [
+            // 1. APP & SMART HOTEL LOCKS (TTHotel / TTLock) - 39 Models
+            {
+                code: "TT100",
+                name: "Classic Slim Smart Hotel Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Mechanical Key",
+                mortise: "2# Short Mortise / ANSI 5-Latch / EU Mortise",
+                usage: "Hotels, Boutique Resorts, Serviced Apartments",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Sleek stainless steel smart hotel lock powered by TTHotel/TTLock cloud management with BLE mobile key, Mifare 13.56MHz card, and passcode access."
+            },
+            {
+                code: "TT120",
+                name: "Curved Handle TTHotel Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black, Bronze",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / 1# Big Mortise / EU",
+                usage: "3-5 Star Hotels, Corporate Guest Houses",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Ergonomic curved lever stainless steel lock supporting remote eKey sharing, timed guest passcodes, and real-time audit logs."
+            },
+            {
+                code: "TT108",
+                name: "Compact Touch Keypad Hotel Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Gold",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / Single Latch",
+                usage: "Hotels, Hostels, Rental Suites",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Compact backlit touch keypad lock engineered for fast check-in automation via TTHotel PMS software and smartphone Bluetooth."
+            },
+            {
+                code: "TT288",
+                name: "Modern Architectural Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy + Tempered Acrylic",
+                colors: "Matte Black, Silver, Champagne Gold",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "ANSI 5-Latch / 2# SS304 Mortise",
+                usage: "Luxury Hotels, Executive Suites, Villas",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Contemporary flat-panel architectural smart lock featuring anti-peep virtual password protection and anti-panic interior release."
+            },
+            {
+                code: "TT103",
+                name: "Minimalist Round-Edge Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Black, Gold",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / EU 4585/6085",
+                usage: "Hotels, Homestays, Office Cabins",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Corrosion-resistant SS304 escutcheon with smooth rounded corners and hidden mechanical keyhole."
+            },
+            {
+                code: "TT108Z",
+                name: "Zinc Alloy Touch Hotel Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Heavy-Duty Zinc Alloy",
+                colors: "Black, Silver, Red Bronze",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Hotels, Resorts, Commercial Offices",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Reinforced zinc alloy body with capacitive illuminated keypad and multi-level staff/guest permission hierarchy."
+            },
+            {
+                code: "TT287",
+                name: "Beveled Edge TTHotel Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Satin Silver, Gold",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "Business Hotels, Luxury Apartments",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Precision diamond-cut chamfered frame delivering elevated aesthetics and robust deadbolt security."
+            },
+            {
+                code: "TT121",
+                name: "Standard Commercial Smart Hotel Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Gold",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / Single Latch",
+                usage: "Hotels, PG & Co-living Spaces",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Cost-effective, durable stainless steel smart lock built for high-traffic hospitality and student housing doors."
+            },
+            {
+                code: "TT101",
+                name: "Classic Brushed Steel Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Black",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / EU Mortise",
+                usage: "Hotels, Resorts, Clinics",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Timeless vertical stainless steel profile with dual RFID card and BLE smartphone unlocking."
+            },
+            {
+                code: "TT102",
+                name: "Executive Wide-Panel Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black, Bronze",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "4-5 Star Hotels, Banquets, Executive Rooms",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Wide escutcheon ideal for covering existing door cutouts during hotel renovation upgrades."
+            },
+            {
+                code: "TT260",
+                name: "Full-Glass Keypad Smart Hotel Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy + Tempered Glass",
+                colors: "Obsidian Black, Silver",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "ANSI 5-Latch / 2# SS304 Mortise",
+                usage: "Modern Hotels, Airbnb, Smart Homes",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Scratch-resistant tempered glass front fascia with crisp LED numeric touch interface."
+            },
+            {
+                code: "TT261",
+                name: "Ultra-Thin Architectural Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy + Acrylic",
+                colors: "Matte Black, Space Grey",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "EU 3585 / 4585 / 6085 Mortise",
+                usage: "Aluminum Profile Doors, Wooden Doors, Offices",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Slim narrow-stile smart lock compatible with both narrow aluminum doors and standard wooden doors."
+            },
+            {
+                code: "TT511",
+                name: "Dual-Tone Designer Hotel Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black & Gold, Black & Silver",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Boutique Hotels, Luxury Villas",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Striking two-tone metallic finish pairing matte black housing with brushed accents."
+            },
+            {
+                code: "TT109Z",
+                name: "Heavy-Duty Zinc Alloy Hotel Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Silver, Antique Bronze",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "Hotels, Heritage Properties, Resorts",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Solid cast zinc alloy construction engineered for longevity and resistance against mechanical tampering."
+            },
+            {
+                code: "TT218",
+                name: "Streamlined Hospitality Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Champagne",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / EU Mortise",
+                usage: "Business Hotels, Serviced Residences",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Clean, unobtrusive vertical bar design with fast induction card reader and Type-C emergency port."
+            },
+            {
+                code: "TT738",
+                name: "Biometric + TTHotel Hybrid Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy + Tempered Glass",
+                colors: "Matte Black, Dark Grey",
+                unlock: "Fingerprint, TTHotel/TTLock App, Mifare Card, Passcode, Key",
+                mortise: "6068 / 2# SS304 / EU Mortise",
+                usage: "Smart Homes, Executive Suites, Offices",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Integrated semiconductor fingerprint sensor embedded directly on the handle for one-grip biometric entry."
+            },
+            {
+                code: "TT520",
+                name: "Contemporary Flat-Latch Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Silver, Gold",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Hotels, Hostels, Commercial Buildings",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Smooth lever action with internal clutch motor protection and indoor privacy deadbolt."
+            },
+            {
+                code: "TT521",
+                name: "Tapered Lever Hotel Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Brushed Nickel",
+                unlock: "TTHotel / TTLock App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / Single Latch",
+                usage: "Hotels, Co-living, Student Dorms",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Tapered architectural handle with silent mortise compatibility and remote WiFi gateway readiness."
+            },
+            {
+                code: "TT727",
+                name: "Fingerprint & App Smart Door Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Matte Black, Silver",
+                unlock: "Fingerprint, TTLock/TTHotel App, IC Card, Passcode, Key",
+                mortise: "EU 3585 / 4585 / 6085 / Single Latch",
+                usage: "Homes, Offices, Rental Apartments",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Versatile 5-in-1 residential and office smart lock with rapid 0.3s biometric fingerprint verification."
+            },
+            {
+                code: "TTM727",
+                name: "TTHotel Edition Biometric Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Matte Black, Silver",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Smart Hotels, Serviced Suites, Airbnb",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Hotel-firmware variant of TT727 pre-configured for TTHotel front-desk card encoding and remote PIN generation."
+            },
+            {
+                code: "TT860",
+                name: "Slim Frame Biometric Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy + Acrylic",
+                colors: "Black, Silver, Champagne Gold",
+                unlock: "Fingerprint, TTLock App, IC Card, Passcode, Key",
+                mortise: "EU 3585 / 4585 / 6085 / Single Latch",
+                usage: "UPVC, Aluminum, Wooden & Glass-Frame Doors",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Narrow 38mm panel width designed specifically for slim-stile doors without compromising biometric capability."
+            },
+            {
+                code: "TTM860",
+                name: "TTHotel Slim Profile Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy + Acrylic",
+                colors: "Black, Silver, Champagne Gold",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "EU 3585 / 4585 / 6085",
+                usage: "Boutique Hotels, Balcony & Patio Doors",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Hospitality version of the ultra-slim 860 chassis supporting full TTHotel cloud check-in workflows."
+            },
+            {
+                code: "TT726",
+                name: "5-in-1 Residential & Office Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Matte Black, Silver",
+                unlock: "Fingerprint, TTLock App, IC Card, Passcode, Key",
+                mortise: "Single Latch / 5050 / EU Mortise",
+                usage: "Apartments, Office Cabins, Homes",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Easy-retrofit smart lever lock replacing standard cylindrical or mortise door handles in minutes."
+            },
+            {
+                code: "TTM726",
+                name: "TTHotel Retrofit Smart Lever Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Matte Black, Silver",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "Single Latch / 5050 / EU Mortise",
+                usage: "Hotel Renovations, Hostels, PGs",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Seamless hotel upgrade lock enabling TTHotel card & app access on existing single-latch doors."
+            },
+            {
+                code: "TT866",
+                name: "IP65 Weatherproof Outdoor Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel + Waterproof Seal",
+                colors: "Black, Silver",
+                unlock: "Fingerprint, TTLock App, IC Card, Passcode, Key",
+                mortise: "EU 3585 / 4585 / 6085",
+                usage: "Main Gates, Semi-Outdoor Doors, Resorts",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Weather-sealed electronic circuit board and silicone gaskets engineered for exposed exterior gates and coastal resorts."
+            },
+            {
+                code: "TT867",
+                name: "Dual-Sided Fingerprint Gate Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy (Waterproof)",
+                colors: "Matte Black",
+                unlock: "Double-Sided Fingerprint, App, IC Card, Passcode, Key",
+                mortise: "EU 3585 / 4585 / 6085",
+                usage: "Villa Main Gates, Iron Grill Doors",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Features biometric & keypad authentication on both exterior and interior handles to prevent reach-through unlocking on grill gates."
+            },
+            {
+                code: "TT728",
+                name: "Sleek Biometric Handle Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Rose Gold, Silver",
+                unlock: "Fingerprint, TTLock App, IC Card, Passcode, Key",
+                mortise: "Single Latch / 5050 / 6068",
+                usage: "Bedrooms, Offices, Smart Apartments",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Ergonomic thumb-placement fingerprint sensor with voice-guided setup and passage mode."
+            },
+            {
+                code: "TTM728",
+                name: "TTHotel Biometric Suite Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Silver",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "2# SS304 / Single Latch",
+                usage: "Boutique Hotels, Executive Rooms",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Combines guest RFID card issuance with biometric convenience for VIP suites."
+            },
+            {
+                code: "TT725",
+                name: "Smart Cylindrical Knob/Lever Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Black, Silver",
+                unlock: "Fingerprint, TTLock App, IC Card, Passcode, Key",
+                mortise: "60/70mm Adjustable Single Latch",
+                usage: "Interior Doors, Offices, Rental Rooms",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Direct replacement for standard round knob locks requiring zero extra mortise chiseling."
+            },
+            {
+                code: "TTM725",
+                name: "TTHotel Single-Latch Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Black, Silver",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "60/70mm Adjustable Single Latch",
+                usage: "Hostels, Budget Hotels, Staff Rooms",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Fast-install TTHotel lock for single-latch doors with full cloud access control."
+            },
+            {
+                code: "TTM121",
+                name: "TTHotel SS304 Commercial Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Gold",
+                unlock: "TTHotel App, Mifare Card, Passcode, Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Hotels, Resorts, Institutional Hostels",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Heavy-duty SS304 hotel lock optimized for TTHotel PMS desktop card issuance and mobile Bluetooth keys."
+            },
+            {
+                code: "TT893",
+                name: "Pull-Push Handle Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy + IML Panel",
+                colors: "Obsidian Black, Copper Gold",
+                unlock: "Fingerprint, TTLock App, IC Card, Passcode, Key",
+                mortise: "6068 Security Mortise",
+                usage: "Main Entrance Doors, Luxury Villas",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Luxury push-pull ergonomic design with concealed fingerprint reader on the back of the handle."
+            },
+            {
+                code: "TTM893",
+                name: "TTHotel Push-Pull Luxury Suite Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy + IML Panel",
+                colors: "Obsidian Black, Copper Gold",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "6068 / 2# SS304 Mortise",
+                usage: "5-Star Hotel Suites, VIP Villas",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Flagship push-pull hospitality lock uniting grand aesthetic presence with TTHotel cloud automation."
+            },
+            {
+                code: "TTM890",
+                name: "TTHotel Full-Screen Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "CNC Aluminum Alloy",
+                colors: "Space Black, Champagne Gold",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "6068 Automatic / Mechanical Mortise",
+                usage: "Luxury Hotels, Presidential Suites",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Precision CNC-machined unibody smart lock with seamless edge-to-edge touch glass."
+            },
+            {
+                code: "TT891",
+                name: "CNC Unibody Biometric Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "CNC Aluminum Alloy",
+                colors: "Matte Black, Gunmetal Grey",
+                unlock: "Fingerprint, TTLock App, IC Card, Passcode, Key",
+                mortise: "6068 Security Mortise",
+                usage: "Villas, Executive Residences, Offices",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Sculpted unibody silhouette with high-precision biometric recognition and anti-pry alarm."
+            },
+            {
+                code: "TTM718",
+                name: "TTHotel Semi-Auto Slim Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Black, Silver",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "6068 / EU Mortise",
+                usage: "Modern Hotels, Serviced Apartments",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Slim vertical smart lock engineered for effortless hospitality operations and modern interiors."
+            },
+            {
+                code: "TTM897",
+                name: "TTHotel Automatic Deadbolt Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "Aluminum Alloy + Tempered Glass",
+                colors: "Obsidian Black, Bronze",
+                unlock: "TTHotel App, Fingerprint, Mifare Card, Passcode, Key",
+                mortise: "6068 Fully Automatic Mortise",
+                usage: "Luxury Resorts, Smart Apartments",
+                techTags: ["TTHotel / TTLock App", "Fingerprint", "Mifare 13.56MHz", "Passcode"],
+                desc: "Motorized automatic locking and unlocking upon door closure or guest authentication."
+            },
+            {
+                code: "TTM641",
+                name: "TTHotel Split Escutcheon Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Matte Black, PVD Gold",
+                unlock: "TTHotel App, Mifare Card, Passcode, Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Designer Boutique Hotels, Luxury Rooms",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Minimalist split-rose architecture separating the card/keypad reader from the designer door lever."
+            },
+            {
+                code: "TTM958",
+                name: "TTHotel Minimalist Split Smart Lock",
+                category: "App & Smart Hotel Locks",
+                material: "304 Stainless Steel / Zinc Alloy",
+                colors: "Matte Black, Satin Silver, Gold",
+                unlock: "TTHotel App, Mifare Card, Passcode, Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "5-Star Hotels, Architectural Projects",
+                techTags: ["TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Ultra-clean minimalist split lock designed for architects seeking discreet door hardware."
+            },
+
+            // 2. SMART FACE & FINGERPRINT LOCKS (Tuya / TTLock) - 9 Models
+            {
+                code: "ZW718",
+                name: "3D Face Recognition + Video Intercom Smart Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "CNC Aluminum Alloy + Tempered Glass",
+                colors: "Obsidian Black, Space Grey",
+                unlock: "3D Face Recognition, Fingerprint, Tuya/TTLock App, IC Card, Passcode, Key",
+                mortise: "6068 Fully Automatic Mortise",
+                usage: "Luxury Villas, Penthouses, Main Entrance Doors",
+                techTags: ["3D Face Recognition", "Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "Hands-free 3D structured-light facial recognition with built-in wide-angle camera, indoor IPS viewer screen, and automatic mortise."
+            },
+            {
+                code: "ZW897",
+                name: "Flagship 3D Face & Palm Vein Smart Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "CNC Aluminum Alloy",
+                colors: "Matte Black, Champagne Bronze",
+                unlock: "3D Face, Palm Vein, Fingerprint, App, IC Card, Passcode, Key",
+                mortise: "6068 Fully Automatic Silent Mortise",
+                usage: "Bungalows, Luxury Apartments, Executive Offices",
+                techTags: ["3D Face Recognition", "Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "Next-generation touchless biometric lock combining infrared 3D face unlock with palm-vein scanning and rechargeable lithium battery."
+            },
+            {
+                code: "ZW758",
+                name: "3D Face + Peephole Camera Smart Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "Aluminum Alloy + IML Finish",
+                colors: "Starry Black, Gunmetal",
+                unlock: "3D Face Recognition, Fingerprint, Tuya App, IC Card, Passcode, Key",
+                mortise: "6068 Automatic Mortise",
+                usage: "Modern Homes, Smart Apartments",
+                techTags: ["3D Face Recognition", "Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "Active radar wake-up detects approaching visitors and unlocks in <0.8s while sending real-time doorbell snapshots to your phone."
+            },
+            {
+                code: "ZW658",
+                name: "Smart Video Doorbell & Face Recognition Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "Aluminum Alloy",
+                colors: "Obsidian Black",
+                unlock: "3D Face Recognition, Fingerprint, App, IC Card, Passcode, Key",
+                mortise: "6068 Automatic Mortise",
+                usage: "Villas, Main Doors, Corporate Suites",
+                techTags: ["3D Face Recognition", "Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "Integrated HD night-vision camera with two-way audio intercom and anti-spoofing 3D depth facial verification."
+            },
+            {
+                code: "ZW648",
+                name: "Slim 3D Facial Recognition Smart Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "CNC Aluminum Alloy",
+                colors: "Matte Black, Silver Grey",
+                unlock: "3D Face Recognition, Fingerprint, App, IC Card, Passcode, Key",
+                mortise: "6068 / EU Automatic Mortise",
+                usage: "Apartments, Villas, Designer Doors",
+                techTags: ["3D Face Recognition", "Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "Refined narrow-body facial recognition smart lock accommodating users from 1.2m to 2.0m height effortlessly."
+            },
+            {
+                code: "ZF88",
+                name: "Fully Automatic Biometric Push-Pull Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "Zinc & Aluminum Alloy",
+                colors: "Black, Copper",
+                unlock: "Fingerprint, Tuya/TTLock App, IC Card, Passcode, Key",
+                mortise: "6068 Automatic Mortise",
+                usage: "Residential Main Doors, Offices",
+                techTags: ["Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "One-touch biometric push-pull lock with automatic deadbolt deployment and indoor electronic double-lock button."
+            },
+            {
+                code: "ZFD6",
+                name: "Smart Camera & Fingerprint Entrance Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "Aluminum Alloy + Tempered Glass",
+                colors: "Matte Black",
+                unlock: "Fingerprint, Tuya WiFi App, IC Card, Passcode, Key",
+                mortise: "6068 Automatic Mortise",
+                usage: "Apartments, Bungalows, Smart Homes",
+                techTags: ["Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "Built-in WiFi doorbell camera streams live visitor video directly to your smartphone without needing an external hub."
+            },
+            {
+                code: "ZFD2",
+                name: "Ergonomic Biometric Smart Handle Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "Aluminum Alloy",
+                colors: "Black, Dark Grey",
+                unlock: "Fingerprint, Tuya/TTLock App, IC Card, Passcode, Key",
+                mortise: "6068 / 2# SS304 Mortise",
+                usage: "Homes, Office Doors, Clinics",
+                techTags: ["Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "Reliable semiconductor biometric lock with virtual anti-peep password and emergency USB power interface."
+            },
+            {
+                code: "ZFD7",
+                name: "Luxury IML Biometric & App Door Lock",
+                category: "Smart Face & Fingerprint Locks",
+                material: "CNC Aluminum Alloy + IML",
+                colors: "Obsidian Black, Gold Trim",
+                unlock: "Fingerprint, App, IC Card, Passcode, Key",
+                mortise: "6068 Automatic Mortise",
+                usage: "Luxury Residences, Executive Cabins",
+                techTags: ["Fingerprint", "TTHotel / TTLock App", "Passcode"],
+                desc: "Scratch-proof IML surface finish paired with high-speed biometric authentication and indoor HD viewer."
+            },
+
+            // 3. MIFARE (13.56MHz) & TEMIC (125KHz) HOTEL LOCKS - 59 Models
+            {
+                code: "RF100",
+                name: "Classic SS304 RFID Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / ANSI 5-Latch",
+                usage: "Hotels, Resorts, Motels",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Industry-standard brushed stainless steel RFID hotel lock compatible with hotel management software and energy saving switches."
+            },
+            {
+                code: "RF120",
+                name: "Curved Lever SS304 Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black, Bronze",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / 1# Big Mortise",
+                usage: "3-5 Star Hotels, Corporate Guest Houses",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Smooth arched handle design with ANSI 5-latch anti-card tongue and deadbolt privacy indicator."
+            },
+            {
+                code: "RF108",
+                name: "Compact Stainless RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / Single Latch",
+                usage: "Hotels, Hostels, Lodges",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Clean, compact stainless escutcheon with concealed cylinder and low-battery audible alert."
+            },
+            {
+                code: "RF107",
+                name: "Slim Profile RFID Hotel Door Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise",
+                usage: "Boutique Hotels, Guest Rooms",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Minimalist narrow escutcheon ideal for modern flush doors with fast <1s card induction."
+            },
+            {
+                code: "RF288",
+                name: "Acrylic & Zinc Modern Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy + Acrylic",
+                colors: "Black, Silver, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "ANSI 5-Latch / 2# SS304 Mortise",
+                usage: "Luxury Hotels, Business Suites",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "High-gloss acrylic sensor zone with illuminated LED card reader status feedback."
+            },
+            {
+                code: "RF287",
+                name: "Chamfered Zinc Alloy Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Silver, Black, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "4-5 Star Hotels, Resorts",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Heavy-duty beveled zinc housing engineered for high-frequency hospitality door cycles."
+            },
+            {
+                code: "RF121",
+                name: "Standard SS304 Hospitality Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise",
+                usage: "Hotels, Resorts, Institutional Dorms",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Best-selling economical stainless steel hotel card lock with proven reliability."
+            },
+            {
+                code: "RF879",
+                name: "Streamlined Designer RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, PVD Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "Boutique Hotels, Luxury Suites",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Refined vertical lines with smooth return-to-door ergonomic lever."
+            },
+            {
+                code: "RF880",
+                name: "Wide-Base Renovation Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Bronze",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "Hotel Upgrades, Heritage Hotels",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Generous backplate dimensions effortlessly cover older mechanical lock mortise holes."
+            },
+            {
+                code: "RF105",
+                name: "Round-Top SS304 Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise",
+                usage: "Hotels, Guest Houses, Clubs",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Softly arched top and bottom escutcheon profile crafted from marine-grade SS304."
+            },
+            {
+                code: "RF101",
+                name: "Classic Rectangular SS304 Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / EU Mortise",
+                usage: "Hotels, Hospitals, Offices",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Clean architectural lines with moisture-proof potted PCB electronics."
+            },
+            {
+                code: "RF102",
+                name: "Executive Heavy-Duty Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Antique Bronze",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / ANSI 5-Latch",
+                usage: "4-5 Star Hotels, Resorts",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Substantial heavy-gauge stainless steel body for grand hotel entrance doors."
+            },
+            {
+                code: "RF260",
+                name: "Tempered Glass Fascia Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy + Tempered Glass",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "ANSI 5-Latch / 2# SS304 Mortise",
+                usage: "Contemporary Hotels, Serviced Suites",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Mirror-smooth tempered glass card sensor plate resistant to scratches and fingerprints."
+            },
+            {
+                code: "RF261",
+                name: "Narrow-Stile RFID Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy + Acrylic",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "EU 3585 / 4585 / 6085",
+                usage: "Aluminum Doors, Balcony Doors, Hotels",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Slim-width RFID lock engineered for narrow-frame aluminum and UPVC doors."
+            },
+            {
+                code: "RF103",
+                name: "Soft-Contour SS304 Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise",
+                usage: "Hotels, Resorts, Clinics",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Smoothly radiused corners with hidden bottom cylinder and emergency mechanical override."
+            },
+            {
+                code: "RF104",
+                name: "Architectural Brushed Steel Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Business Hotels, Office Suites",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Precision hair-line brushed SS304 finish with anti-theft deadbolt sensor."
+            },
+            {
+                code: "RF218",
+                name: "Modern Vertical RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Champagne",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / EU Mortise",
+                usage: "Hotels, Hostels, Serviced Apartments",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Balanced proportions with high-sensitivity RFID antenna and dual-color LED indicator."
+            },
+            {
+                code: "RF511",
+                name: "Two-Tone Luxury Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black & Gold, Black & Silver",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Boutique Hotels, Luxury Resorts",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Contrasting metallic trim elevates guest room corridor aesthetics."
+            },
+            {
+                code: "RF512",
+                name: "Executive Zinc & Acrylic Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy + Acrylic",
+                colors: "Black, Gold, Silver",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "4-5 Star Hotels, Suites",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Heavy cast zinc lock body with sleek acrylic reader window."
+            },
+            {
+                code: "RF109",
+                name: "Cast Zinc Hospitality Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Silver, Black, Bronze",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / 1# Big Mortise",
+                usage: "Hotels, Resorts, Clubs",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Durable zinc alloy construction with smooth clutch mechanism to prevent forced handle damage."
+            },
+            {
+                code: "RF110",
+                name: "Classic European Style Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy / Brass Finish",
+                colors: "Antique Bronze, PVD Gold, Silver",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / ANSI 5-Latch",
+                usage: "Heritage Hotels, Luxury Resorts",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Ornate classic styling suited for traditional and heritage hospitality interiors."
+            },
+            {
+                code: "RF290",
+                name: "Full-Face Acrylic RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy + Acrylic",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "ANSI 5-Latch / 2# SS304 Mortise",
+                usage: "Modern Hotels, Tech Parks",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Sleek monolithic front face with responsive contactless card induction."
+            },
+            {
+                code: "RF292",
+                name: "Sculpted Lever RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Matte Black, Brushed Nickel",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "Business Hotels, Executive Floors",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Ergonomic sculpted handle with anti-panic interior egress function."
+            },
+            {
+                code: "RF122",
+                name: "Heavy-Gauge SS304 Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Hotels, Hostels, Hospitals",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Reinforced stainless steel panel designed for high-occupancy hotels."
+            },
+            {
+                code: "RF727",
+                name: "EU Mortise RFID Hotel Lever Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "EU 3585 / 4585 / 6085 / Single Latch",
+                usage: "Hotels, Office Doors, Apartments",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Compatible with European mortise locks and single-latch doors for effortless hotel retrofits."
+            },
+            {
+                code: "RF738",
+                name: "Glass-Panel Mifare Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy + Tempered Glass",
+                colors: "Black, Dark Grey",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "6068 / 2# SS304 / EU Mortise",
+                usage: "Luxury Hotels, Executive Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Sleek tempered glass body offering elevated visual appeal and fast Mifare 13.56MHz reading."
+            },
+            {
+                code: "RF1008",
+                name: "Minimalist Cylindrical-Base RFID Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / Single Latch",
+                usage: "Boutique Hotels, Guest Houses",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Clean, compact stainless silhouette for contemporary interior doors."
+            },
+            {
+                code: "RF520",
+                name: "Flat-Profile Zinc RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Silver, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Hotels, Resorts, Clubs",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Low-profile zinc alloy escutcheon with integrated privacy deadbolt."
+            },
+            {
+                code: "RF521",
+                name: "Tapered-Handle RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise",
+                usage: "Hotels, Co-living, Student Housing",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Modern tapered handle design with durable PVD surface coating."
+            },
+            {
+                code: "RF860",
+                name: "Ultra-Slim EU Profile RFID Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy + Acrylic",
+                colors: "Black, Silver, Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "EU 3585 / 4585 / 6085",
+                usage: "Narrow-Stile Aluminum & Wooden Hotel Doors",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Slim 38mm narrow escutcheon for aluminum-framed patio/balcony doors and sleek wooden doors."
+            },
+            {
+                code: "RF726",
+                name: "Single-Latch RFID Hotel Retrofit Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "Single Latch / 5050 / EU Mortise",
+                usage: "Budget Hotels, Hostels, Staff Doors",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Quick-install RFID card lock designed to fit standard single-latch door preparations."
+            },
+            {
+                code: "RF601",
+                name: "Compact Cylindrical RFID Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "60/70mm Cylindrical Latch",
+                usage: "Interior Office Doors, Hostels, Clinics",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Compact stainless steel RFID lock ideal for standard tubular latch doors."
+            },
+            {
+                code: "RF866",
+                name: "Waterproof Outdoor RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel (IP65)",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "EU 3585 / 4585 / 6085",
+                usage: "Beach Resorts, Outdoor Cottages, Gates",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Weatherproof sealed RFID card lock engineered for humid, coastal, and semi-outdoor resort environments."
+            },
+            {
+                code: "RF865",
+                name: "Slim Waterproof RFID Gate/Cottage Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "EU 3585 / 4585",
+                usage: "Resort Cottages, Poolside Doors",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Corrosion-resistant narrow-stile RFID lock built for resort cottages and exterior frames."
+            },
+            {
+                code: "RF867",
+                name: "Dual-Reader Double-Sided RFID Gate Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy (Weatherproof)",
+                colors: "Matte Black",
+                unlock: "Double-Sided Mifare 13.56MHz Card, Key",
+                mortise: "EU 3585 / 4585 / 6085",
+                usage: "Resort Perimeter Gates, Restricted Access Doors",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Requires RFID card authentication on both entry and exit sides for high-security gates."
+            },
+            {
+                code: "RF901",
+                name: "Architectural SS304 Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Black, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI 5-Latch",
+                usage: "4-5 Star Hotels, Corporate Towers",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Precision-crafted stainless escutcheon with silent magnetic-feel latch operation."
+            },
+            {
+                code: "RF868",
+                name: "Heavy-Duty Narrow Frame RFID Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "EU 3585 / 4585 / 6085",
+                usage: "Aluminum & Glass-Frame Hotel Doors",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Reinforced narrow-profile lock for commercial aluminum and steel doors."
+            },
+            {
+                code: "RF877",
+                name: "Contemporary Minimalist Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Matte Black, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / EU Mortise",
+                usage: "Boutique Hotels, Luxury Apartments",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Clean geometric lines with high-contrast LED card status ring."
+            },
+            {
+                code: "RF281",
+                name: "Wide-Plate Zinc Alloy Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Silver, Gold, Antique Bronze",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / ANSI 5-Latch",
+                usage: "Hotels, Resorts, Banquet Halls",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Robust cast zinc construction with integrated deadbolt privacy switch."
+            },
+            {
+                code: "RF827",
+                name: "Sleek Rounded-Bar RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise",
+                usage: "Business Hotels, Guest Houses",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Smooth oval-ended stainless plate with reliable RFID induction."
+            },
+            {
+                code: "RF8060",
+                name: "Extended-Plate Commercial Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "Hotels, Institutional Buildings",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Extended escutcheon profile built for heavy-duty commercial doors."
+            },
+            {
+                code: "RF896",
+                name: "Luxury Designer RFID Suite Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy + Tempered Glass",
+                colors: "Obsidian Black, Champagne Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "ANSI 5-Latch / 2# SS304 Mortise",
+                usage: "5-Star Hotels, Luxury Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Premium glass-and-metal architectural finish tailored for upscale hospitality projects."
+            },
+            {
+                code: "RF300",
+                name: "Classic Brushed Steel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise",
+                usage: "Hotels, Motels, Clubs",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Dependable entry-level stainless steel hotel card lock with full PMS compatibility."
+            },
+            {
+                code: "RF282",
+                name: "Sculpted Zinc Alloy Hotel Card Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Silver, Bronze",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "Hotels, Resorts",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Heavy-duty sculpted zinc housing with anti-tamper clutch mechanism."
+            },
+            {
+                code: "RF586",
+                name: "Modern Slim-Line RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Matte Black",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Boutique Hotels, Modern Offices",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Clean minimalist vertical profile with high-speed Mifare 13.56MHz card reading."
+            },
+            {
+                code: "RF828",
+                name: "Dual-Finish Architectural Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise / ANSI Mortise",
+                usage: "Hotels, Serviced Apartments",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Precision-stamped SS304 body with smooth lever spring return."
+            },
+            {
+                code: "RF875",
+                name: "Beveled Stainless RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "2# Short Mortise",
+                usage: "Hotels, Resorts, Guest Houses",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Crisp beveled edges in brushed stainless steel for contemporary hotel corridors."
+            },
+            {
+                code: "RF885",
+                name: "Executive Wide-Escutcheon RFID Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Bronze",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "1# Big Mortise / 2# SS304 Mortise",
+                usage: "4-5 Star Hotels, Renovations",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Wide stainless chassis ideal for heavy wooden entrance doors."
+            },
+            {
+                code: "RF893",
+                name: "Push-Pull Handle RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy + IML",
+                colors: "Obsidian Black, Copper Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "6068 / 2# SS304 Mortise",
+                usage: "5-Star Hotel Suites, VIP Rooms",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Grand push-pull handle silhouette engineered for intuitive contactless RFID entry."
+            },
+            {
+                code: "RF898",
+                name: "Luxury Glass-Face RFID Suite Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy + Tempered Glass",
+                colors: "Obsidian Black, Gunmetal",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI 5-Latch",
+                usage: "Luxury Hotels, Resorts",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Sleek full-glass front fascia delivering a premium hospitality aesthetic."
+            },
+            {
+                code: "RF891",
+                name: "CNC Unibody RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "CNC Aluminum Alloy",
+                colors: "Matte Black, Space Grey",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "6068 / 2# SS304 Mortise",
+                usage: "Designer Hotels, Executive Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Solid CNC-milled aluminum housing with ultra-fast Mifare card recognition."
+            },
+            {
+                code: "RF890",
+                name: "Edge-to-Edge Glass RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "CNC Aluminum Alloy",
+                colors: "Space Black, Champagne Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "6068 / 2# SS304 Mortise",
+                usage: "5-Star Hotels, Presidential Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Flagship architectural RFID card lock featuring seamless surface geometry."
+            },
+            {
+                code: "RF897",
+                name: "Automatic Deadbolt RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy + Tempered Glass",
+                colors: "Obsidian Black, Bronze",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "6068 Automatic Mortise",
+                usage: "Luxury Resorts, Smart Hotels",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Motorized automatic locking upon door close for effortless guest security."
+            },
+            {
+                code: "RF641",
+                name: "Split-Rose Stainless RFID Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Matte Black, PVD Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Boutique Hotels, Architectural Projects",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Separate RFID reader head and designer door lever for clean architectural doors."
+            },
+            {
+                code: "RF646",
+                name: "Round Split-Escutcheon RFID Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Modern Hotels, Luxury Residences",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Circular split-rose design matching contemporary European door hardware."
+            },
+            {
+                code: "RF642",
+                name: "Square Split-Escutcheon RFID Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Matte Black, Satin Silver, PVD Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Designer Hotels, Executive Offices",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Crisp square split-rose geometry delivering minimalist elegance."
+            },
+            {
+                code: "RF5572",
+                name: "Heavy-Duty ANSI 5-Latch Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Gold, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card, Mechanical Key",
+                mortise: "ANSI 5-Latch Heavy Mortise",
+                usage: "4-5 Star Hotels, Fire-Rated Doors",
+                techTags: ["Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Built for heavy commercial and fire-rated hotel doors requiring ANSI 5-latch mortises."
+            },
+            {
+                code: "RF728",
+                name: "Slim Ergonomic Mifare Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Zinc Alloy",
+                colors: "Black, Silver, Rose Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "Single Latch / 5050 / 2# SS304",
+                usage: "Boutique Hotels, Serviced Apartments",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Compact lever lock with fast contactless Mifare card access."
+            },
+            {
+                code: "RF725",
+                name: "Cylindrical Retrofit Mifare Hotel Lock",
+                category: "Mifare & Temic Hotel Locks",
+                material: "Aluminum Alloy",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "60/70mm Adjustable Single Latch",
+                usage: "Hostels, Budget Hotels, Interior Doors",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Easy drop-in replacement for cylindrical knob locks with full hotel card software integration."
+            },
+
+            // 4. SPLIT & AUTOMATIC HOTEL LOCKS - 15 Models
+            {
+                code: "RF953",
+                name: "Minimalist Split RFID Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Matte Black, Brushed Silver, PVD Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "5-Star Hotels, Luxury Boutique Resorts",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Architectural split lock featuring an independent compact RFID reader module above a designer SS304 lever."
+            },
+            {
+                code: "RF972",
+                name: "Circular Split-Rose Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, PVD Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Luxury Hotels, Designer Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Sleek round reader pod paired with matching circular rose door handle."
+            },
+            {
+                code: "RF986",
+                name: "Glass-Touch Split Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "Zinc Alloy + Tempered Glass",
+                colors: "Obsidian Black, Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "5-Star Hotels, Executive Floors",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Tempered glass split reader bezel delivering a high-end modern hospitality look."
+            },
+            {
+                code: "RF985",
+                name: "Square Architectural Split Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Matte Black, Satin Silver, Bronze",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Contemporary Hotels, Luxury Villas",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Clean square split-escutcheon architecture preferred by interior architects."
+            },
+            {
+                code: "RF982",
+                name: "Slim Vertical Split RFID Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Matte Black, Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Boutique Hotels, Serviced Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Compact vertical reader module with hidden keyhole cylinder."
+            },
+            {
+                code: "RF981",
+                name: "Designer Lever Split Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, PVD Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "Luxury Hospitality Projects",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Combines minimalist split electronics with custom architectural lever ergonomics."
+            },
+            {
+                code: "RF958",
+                name: "Ultra-Minimalist Split Escutcheon Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel / Zinc Alloy",
+                colors: "Matte Black, Satin Silver, Champagne Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "5-Star Hotels, Signature Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Signature split hotel lock allowing the door's natural wood or veneer finish to stand out."
+            },
+            {
+                code: "RF530",
+                name: "Automatic Motorized Hotel Card Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "Aluminum Alloy + Tempered Glass",
+                colors: "Obsidian Black, Gunmetal",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "6068 Fully Automatic Mortise",
+                usage: "Luxury Hotels, VIP Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Fully automatic motorized deadbolt retracts silently upon presenting a valid guest card."
+            },
+            {
+                code: "RF957",
+                name: "Compact Round Split Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black, Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Boutique Hotels, Resorts",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Discreet circular RFID reader paired with matching stainless steel handle."
+            },
+            {
+                code: "RF963",
+                name: "Beveled Split-Body RFID Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "Zinc Alloy + SS304",
+                colors: "Matte Black, Brushed Nickel, PVD Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "4-5 Star Hotels, Luxury Resorts",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Precision-beveled split reader unit with illuminated DND/status indicator."
+            },
+            {
+                code: "RF965",
+                name: "PVD Finish Split Architectural Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "PVD Gold, PVD Rose Gold, Matte Black, Silver",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Luxury Hotels, Designer Residences",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "PVD-coated stainless steel split lock engineered for long-lasting corrosion and scratch resistance."
+            },
+            {
+                code: "RF966",
+                name: "Flush-Mount Split RFID Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Silver, Black",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "Modern Hotels, Acoustic Doors",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Low-profile flush-seated split lock for seamless contemporary door elevations."
+            },
+            {
+                code: "RF967",
+                name: "Executive Split-Handle RFID Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Black, Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "Business Hotels, Executive Suites",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Heavy-duty split escutcheon lock with smooth internal return spring."
+            },
+            {
+                code: "RF971",
+                name: "Minimalist Rectangular Split Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel",
+                colors: "Matte Black, Silver, Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / EU Mortise",
+                usage: "5-Star Hotels, Luxury Resorts",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Clean rectangular reader module with crisp LED feedback and concealed mechanical keyway."
+            },
+            {
+                code: "RF978",
+                name: "Signature Architectural Split Hotel Lock",
+                category: "Split & Automatic Hotel Locks",
+                material: "304 Stainless Steel + Acrylic",
+                colors: "Obsidian Black, Satin Silver, Champagne Gold",
+                unlock: "Mifare 13.56MHz Card, Mechanical Key",
+                mortise: "2# SS304 / ANSI Mortise",
+                usage: "Luxury Hotels, Resorts, Villas",
+                techTags: ["Mifare 13.56MHz"],
+                desc: "Top-tier split hospitality lock combining minimalist aesthetics with heavy-duty SS304 mortise security."
+            },
+
+            // 5. ENERGY SAVING SWITCHES - 9 Models
+            {
+                code: "SW01",
+                name: "Standard Magnetic / Universal Energy Saving Switch",
+                category: "Energy Saving Switches",
+                material: "Fire-Retardant PC (V0 Grade)",
+                colors: "White, Ivory, Silver, Black",
+                unlock: "Any Card / Magnetic Induction (30A / 40A Relay)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Hotel Guest Rooms, Apartments",
+                techTags: ["Energy Saving"],
+                desc: "AC 220V 30A/40A heavy-duty relay power saver with 15-second exit delay so guests never leave in the dark."
+            },
+            {
+                code: "SW02",
+                name: "Temic 125KHz High-Frequency Energy Saver",
+                category: "Energy Saving Switches",
+                material: "Fire-Retardant PC (V0 Grade)",
+                colors: "White, Champagne Gold, Matte Black",
+                unlock: "Temic 125KHz Hotel Key Card Only (40A)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Hotels using Temic 125KHz RFID Locks",
+                techTags: ["Energy Saving", "Temic 125KHz"],
+                desc: "Dedicated 125KHz RFID frequency recognition prevents guests from using visiting cards or paper to bypass room power."
+            },
+            {
+                code: "SW03",
+                name: "Mifare 13.56MHz Smart Energy Saving Switch",
+                category: "Energy Saving Switches",
+                material: "Fire-Retardant PC (V0 Grade)",
+                colors: "White, Silver Grey, Matte Black",
+                unlock: "Mifare 13.56MHz Hotel Key Card Only (40A)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Hotels using Mifare 13.56MHz / TTHotel Locks",
+                techTags: ["Energy Saving", "Mifare 13.56MHz"],
+                desc: "Reads encrypted 13.56MHz Mifare guest cards exclusively, cutting AC and lighting loads 15s after card removal."
+            },
+            {
+                code: "SW05",
+                name: "Tempered Glass Touch Energy Saving Switch",
+                category: "Energy Saving Switches",
+                material: "Crystal Tempered Glass + Fireproof PC",
+                colors: "Obsidian Black, Pearl White, Champagne Gold",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card (40A)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "4-5 Star Luxury Hotels, Suites",
+                techTags: ["Energy Saving", "Mifare 13.56MHz"],
+                desc: "Luxury crystal-glass bezel energy saving switch with soft blue LED locator ring."
+            },
+            {
+                code: "SW07",
+                name: "Heavy-Duty 40A HVAC & Lighting Power Saver",
+                category: "Energy Saving Switches",
+                material: "Fire-Retardant PC + Brass Terminals",
+                colors: "White, Gold, Black",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card (40A / 8800W)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Hotels with Central/Split AC Units",
+                techTags: ["Energy Saving", "Mifare 13.56MHz"],
+                desc: "High-capacity 40A (8800W) magnetic latching relay engineered to handle high-inrush air conditioning loads."
+            },
+            {
+                code: "SW08",
+                name: "Slim Brushed Metallic Energy Saving Switch",
+                category: "Energy Saving Switches",
+                material: "Brushed Aluminum + PC",
+                colors: "Brushed Silver, Matte Black, Rose Gold",
+                unlock: "Mifare 13.56MHz Card (40A)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Boutique Hotels, Designer Interiors",
+                techTags: ["Energy Saving", "Mifare 13.56MHz"],
+                desc: "Architectural brushed metallic finish matching modern modular switch plates."
+            },
+            {
+                code: "TTSW06",
+                name: "TTHotel Networked Smart Energy Saving Switch",
+                category: "Energy Saving Switches",
+                material: "Tempered Glass + Fireproof PC",
+                colors: "Black, White, Gold",
+                unlock: "TTHotel App / Mifare 13.56MHz Card (40A)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Smart Cloud-Managed Hotels",
+                techTags: ["Energy Saving", "TTHotel / TTLock App", "Mifare 13.56MHz"],
+                desc: "Integrates directly with TTHotel PMS to validate room-specific card permissions and monitor room occupancy power."
+            },
+            {
+                code: "PSW02",
+                name: "Card-Coded Anti-Bypass Energy Saving Switch",
+                category: "Energy Saving Switches",
+                material: "Fire-Retardant PC (V0 Grade)",
+                colors: "White, Black, Gold",
+                unlock: "Hotel-Coded Mifare 13.56MHz Card Only",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Hotels Seeking Maximum Electricity Savings",
+                techTags: ["Energy Saving", "Mifare 13.56MHz"],
+                desc: "Verifies hotel sector encryption on the Mifare card—rejects non-hotel Mifare cards (like metro/bank cards)."
+            },
+            {
+                code: "PSW05",
+                name: "Luxury Glass Card-Coded Power Saving Switch",
+                category: "Energy Saving Switches",
+                material: "Tempered Glass + Fireproof PC",
+                colors: "Obsidian Black, Champagne Gold, White",
+                unlock: "Hotel-Coded Mifare 13.56MHz Card Only (40A)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "5-Star Hotels, Luxury Resorts",
+                techTags: ["Energy Saving", "Mifare 13.56MHz"],
+                desc: "Combines hotel-sector anti-fraud card verification with a sleek tempered glass fascia."
+            },
+
+            // 6. DND DOORPLATES, CONTROL SWITCHES & DOORBELLS - 19 Models
+            {
+                code: "DP00",
+                name: "Standard Backlit DND / MUR LED Doorplate",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass + Aluminum Frame",
+                colors: "Black, Gold, Silver",
+                unlock: "Touch Doorbell + DND (Do Not Disturb) + MUR (Make Up Room) LED",
+                mortise: "Standard 86×86mm / 146×86mm Wall Box",
+                usage: "Hotel Room Exterior Corridors",
+                techTags: ["DND / Doorplate"],
+                desc: "Crisp illuminated corridor display showing Room Number, Do Not Disturb, Make Up Room, and integrated touch doorbell."
+            },
+            {
+                code: "DP01",
+                name: "Vertical Luxury Glass DND Corridor Panel",
+                category: "DND Doorplates & Control Switches",
+                material: "Crystal Tempered Glass + Brushed Frame",
+                colors: "Obsidian Black, Champagne Gold",
+                unlock: "Touch Doorbell + DND + MUR + Please Wait + Room Number",
+                mortise: "Standard Flush Wall Box",
+                usage: "4-5 Star Hotels, Luxury Resorts",
+                techTags: ["DND / Doorplate"],
+                desc: "Vertical architectural doorplate with customizable backlit room number and high-visibility DND/MUR icons."
+            },
+            {
+                code: "DP02",
+                name: "Slim Aluminum-Trim DND & Doorbell Plate",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass + CNC Aluminum",
+                colors: "Matte Black, Silver, Bronze",
+                unlock: "Touch Doorbell + DND + MUR LED Display",
+                mortise: "Standard Flush Wall Box",
+                usage: "Boutique Hotels, Business Suites",
+                techTags: ["DND / Doorplate"],
+                desc: "Ultra-slim profile with capacitive touch doorbell that automatically mutes when DND is active."
+            },
+            {
+                code: "DP03",
+                name: "Horizontal Panoramic DND Room Number Plate",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass",
+                colors: "Black, White, Gold",
+                unlock: "Touch Doorbell + DND + MUR + Room Number",
+                mortise: "146×86mm Wall Box",
+                usage: "Modern Hotels, Serviced Apartments",
+                techTags: ["DND / Doorplate"],
+                desc: "Wide horizontal glass layout offering clear corridor visibility from both directions."
+            },
+            {
+                code: "DP04",
+                name: "Frameless Crystal DND Touch Doorplate",
+                category: "DND Doorplates & Control Switches",
+                material: "Beveled Crystal Tempered Glass",
+                colors: "Obsidian Black, Pearl White",
+                unlock: "Touch Doorbell + DND + MUR + Check-In Status",
+                mortise: "Standard Flush Wall Box",
+                usage: "Luxury Hotels, Signature Suites",
+                techTags: ["DND / Doorplate"],
+                desc: "Seamless frameless glass doorplate with warm LED backlighting."
+            },
+            {
+                code: "DP05",
+                name: "Multi-Status DND / MUR / Laundry Doorplate",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass + Alloy Frame",
+                colors: "Black, Champagne Gold",
+                unlock: "Doorbell + DND + MUR + Laundry + Room Number",
+                mortise: "Vertical Wall Box",
+                usage: "5-Star Luxury Hotels & Resorts",
+                techTags: ["DND / Doorplate"],
+                desc: "Comprehensive 4-status hospitality indicator including Laundry pickup request."
+            },
+            {
+                code: "DP06",
+                name: "Compact 86-Type DND & Doorbell Indicator",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass + PC",
+                colors: "Black, White, Gold",
+                unlock: "Touch Doorbell + DND + MUR LED",
+                mortise: "Standard 86×86mm Box",
+                usage: "Hotels, Clinics, Executive Offices",
+                techTags: ["DND / Doorplate"],
+                desc: "Fits standard single-gang 86×86mm electrical wall boxes for easy installation."
+            },
+            {
+                code: "DP07",
+                name: "Brushed Metallic DND Corridor Display",
+                category: "DND Doorplates & Control Switches",
+                material: "Brushed Stainless / Aluminum + Glass",
+                colors: "Brushed Silver, Rose Gold, Black",
+                unlock: "Doorbell + DND + MUR + Room Number",
+                mortise: "Standard Flush Wall Box",
+                usage: "Contemporary Hotels, Clubs",
+                techTags: ["DND / Doorplate"],
+                desc: "Brushed metallic finish engineered to coordinate with SS304 hotel locks."
+            },
+            {
+                code: "DP08",
+                name: "Integrated RFID + DND Corridor Panel",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass + Alloy",
+                colors: "Obsidian Black, Gold",
+                unlock: "DND + MUR + Doorbell + Room Number",
+                mortise: "Vertical Wall Box",
+                usage: "Smart Hotels, Luxury Suites",
+                techTags: ["DND / Doorplate"],
+                desc: "Unified exterior room signage combining room number illumination and housekeeping status."
+            },
+            {
+                code: "DP09",
+                name: "Architectural Tall-Format DND Doorplate",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass + CNC Frame",
+                colors: "Matte Black, Champagne Gold",
+                unlock: "Doorbell + DND + MUR + Please Wait + Room No.",
+                mortise: "Tall Flush Wall Box",
+                usage: "5-Star Hotels, Presidential Suites",
+                techTags: ["DND / Doorplate"],
+                desc: "Statement tall-format corridor display with laser-etched illuminated room digits."
+            },
+            {
+                code: "DP10",
+                name: "Minimalist Icon-Only DND / MUR Plate",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass",
+                colors: "Black, White, Grey",
+                unlock: "Touch Doorbell + DND + MUR",
+                mortise: "Standard 86×86mm Box",
+                usage: "Boutique Hotels, Offices, Spa Rooms",
+                techTags: ["DND / Doorplate"],
+                desc: "Clean, universal iconographic display without clutter."
+            },
+            {
+                code: "DP11",
+                name: "Custom-Logo Illuminated Hotel Doorplate",
+                category: "DND Doorplates & Control Switches",
+                material: "Crystal Glass + PVD Frame",
+                colors: "Black & Gold, Black & Silver",
+                unlock: "Custom Hotel Logo + Room No. + DND + MUR + Bell",
+                mortise: "Vertical Flush Wall Box",
+                usage: "Flagship Hotels & Resorts",
+                techTags: ["DND / Doorplate"],
+                desc: "Supports custom backlit hotel brand emblem alongside room number and DND/MUR indicators."
+            },
+            {
+                code: "CS00",
+                name: "Indoor DND / MUR Touch Control Switch",
+                category: "DND Doorplates & Control Switches",
+                material: "Tempered Glass + Fireproof PC",
+                colors: "Black, White, Gold",
+                unlock: "Capacitive Touch DND & MUR Indoor Control",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Hotel Guest Room Interior",
+                techTags: ["DND / Doorplate"],
+                desc: "Mounted inside the guest room to toggle exterior DND and Make Up Room indicators with one touch."
+            },
+            {
+                code: "CS01",
+                name: "2-Gang Glass DND + MUR Interior Switch",
+                category: "DND Doorplates & Control Switches",
+                material: "Crystal Tempered Glass",
+                colors: "Obsidian Black, Pearl White, Gold",
+                unlock: "Touch DND + MUR with LED Feedback",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Hotel Guest Rooms & Bedside Panels",
+                techTags: ["DND / Doorplate"],
+                desc: "Interlocked touch buttons ensure DND and MUR cannot be active simultaneously."
+            },
+            {
+                code: "CS02",
+                name: "3-Gang DND / MUR / Laundry Touch Switch",
+                category: "DND Doorplates & Control Switches",
+                material: "Crystal Tempered Glass",
+                colors: "Black, White, Champagne Gold",
+                unlock: "Touch DND + MUR + Laundry Control",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "4-5 Star Hotel Rooms",
+                techTags: ["DND / Doorplate"],
+                desc: "3-function indoor touch switch synchronizing directly with DP05/DP09 corridor doorplates."
+            },
+            {
+                code: "CS03",
+                name: "4-Gang Master + DND/MUR Touch Switch",
+                category: "DND Doorplates & Control Switches",
+                material: "Crystal Tempered Glass",
+                colors: "Black, Gold, Silver",
+                unlock: "Master Power + DND + MUR + Please Wait",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Luxury Hotel Suites",
+                techTags: ["DND / Doorplate"],
+                desc: "Combines bedside master lighting control with housekeeping status buttons."
+            },
+            {
+                code: "CS05",
+                name: "Brushed Metal Tactile DND / MUR Switch",
+                category: "DND Doorplates & Control Switches",
+                material: "Brushed Aluminum + PC",
+                colors: "Brushed Silver, Matte Black, Rose Gold",
+                unlock: "Tactile Push DND + MUR Control",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Boutique Hotels, Executive Rooms",
+                techTags: ["DND / Doorplate"],
+                desc: "Mechanical tactile switches with crisp LED status backlighting."
+            },
+            {
+                code: "DB01",
+                name: "Wired Hotel Ding-Dong Chime Doorbell",
+                category: "DND Doorplates & Control Switches",
+                material: "Fire-Retardant ABS/PC",
+                colors: "White",
+                unlock: "AC 220V / DC 12V Pleasant Polyphonic Chime",
+                mortise: "Surface / Recessed Mount",
+                usage: "Hotel Rooms, Offices, Homes",
+                techTags: ["DND / Doorplate"],
+                desc: "Pleasant acoustic chime unit triggered by exterior DND doorplate bell button."
+            },
+            {
+                code: "DB02",
+                name: "Flush-Mount Dual-Tone Hotel Chime Bell",
+                category: "DND Doorplates & Control Switches",
+                material: "Fire-Retardant PC",
+                colors: "White, Ivory",
+                unlock: "AC 220V Dual-Tone Chime (DND Mute Compatible)",
+                mortise: "Standard 86×86mm Wall Box",
+                usage: "Hotels, Serviced Apartments",
+                techTags: ["DND / Doorplate"],
+                desc: "Standard 86-box flush chime bell that automatically silences when guest activates Do Not Disturb."
+            },
+
+            // 7. SYSTEM ACCESSORIES, ENCODERS & MORTISES - 14 Models
+            {
+                code: "TTCE01",
+                name: "TTHotel USB Desktop Card Encoder",
+                category: "System Accessories & Mortises",
+                material: "ABS + Non-Slip Base",
+                colors: "Black",
+                unlock: "USB Plug & Play Mifare 13.56MHz Card Issuer",
+                mortise: "Desktop USB (Windows TTHotel Software)",
+                usage: "Hotel Front Desk / Reception",
+                techTags: ["Mortise / Accessory", "TTHotel / TTLock App", "Mifare 13.56MHz"],
+                desc: "Official USB desktop card encoder for issuing guest, staff, master, and floor cards in TTHotel software."
+            },
+            {
+                code: "CE01",
+                name: "Mifare 13.56MHz USB RFID Card Encoder",
+                category: "System Accessories & Mortises",
+                material: "Industrial ABS",
+                colors: "Black / Silver",
+                unlock: "USB 13.56MHz Contactless Card Reader/Writer",
+                mortise: "Desktop USB",
+                usage: "Hotel Reception & Property Management",
+                techTags: ["Mortise / Accessory", "Mifare 13.56MHz"],
+                desc: "High-speed USB encoder for programming Mifare 1K/S50 hotel key cards via front-desk PMS."
+            },
+            {
+                code: "CE02",
+                name: "Temic 125KHz USB RFID Card Encoder",
+                category: "System Accessories & Mortises",
+                material: "Industrial ABS",
+                colors: "Black",
+                unlock: "USB 125KHz Temic Card Reader/Writer",
+                mortise: "Desktop USB",
+                usage: "Hotels using Temic 125KHz Access Locks",
+                techTags: ["Mortise / Accessory", "Temic 125KHz"],
+                desc: "Dedicated 125KHz desktop encoder for rapid check-in card issuance and audit reading."
+            },
+            {
+                code: "CE03",
+                name: "Dual-Frequency (13.56MHz + 125KHz) Encoder",
+                category: "System Accessories & Mortises",
+                material: "Aluminum & ABS Housing",
+                colors: "Black",
+                unlock: "Dual-Band Mifare + Temic USB Encoder",
+                mortise: "Desktop USB",
+                usage: "Multi-Property Hotels & System Integrators",
+                techTags: ["Mortise / Accessory", "Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Versatile dual-frequency desktop encoder supporting both Mifare 13.56MHz and Temic 125KHz card systems."
+            },
+            {
+                code: "TT-G2",
+                name: "TTLock / TTHotel WiFi Smart Gateway (G2)",
+                category: "System Accessories & Mortises",
+                material: "Compact Matte PC",
+                colors: "White, Black",
+                unlock: "Bluetooth-to-WiFi 2.4GHz Bridge (Type-C Powered)",
+                mortise: "Wireless Hub (Covers up to 10m radius)",
+                usage: "Remote Unlocking, Live Logs & OTA Updates",
+                techTags: ["Mortise / Accessory", "TTHotel / TTLock App"],
+                desc: "Connects BLE smart locks to WiFi so managers/owners can unlock doors, change passcodes, and view logs remotely from anywhere."
+            },
+            {
+                code: "AC01",
+                name: "Wall-Mounted RFID Access Controller (Main Gate/Lift)",
+                category: "System Accessories & Mortises",
+                material: "Tempered Glass + Waterproof PC (IP65)",
+                colors: "Black, Silver",
+                unlock: "Mifare 13.56MHz / Temic 125KHz Card + Wiegand/Relay",
+                mortise: "86×86mm Wall Mount (DC 12V)",
+                usage: "Hotel Main Entrance, Glass Doors, Gym, Pool",
+                techTags: ["Mortise / Accessory", "Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Allows guests to use their room key card to open common hotel amenities, glass doors, and perimeter gates."
+            },
+            {
+                code: "AC02",
+                name: "TTHotel Smart Cloud Wall Access Reader",
+                category: "System Accessories & Mortises",
+                material: "Tempered Glass + Aluminum",
+                colors: "Black",
+                unlock: "TTHotel App, Mifare Card, Passcode (DC 12V Relay)",
+                mortise: "86×86mm Wall Mount",
+                usage: "Magnetic Locks, Electric Strikes, Automatic Glass Doors",
+                techTags: ["Mortise / Accessory", "TTHotel / TTLock App", "Mifare 13.56MHz", "Passcode"],
+                desc: "Brings TTHotel app, passcode, and RFID card control to electromagnetic locks and sliding glass doors."
+            },
+            {
+                code: "EC01",
+                name: "Hotel Elevator Floor Access Controller",
+                category: "System Accessories & Mortises",
+                material: "Industrial Steel Enclosure",
+                colors: "Grey / Black",
+                unlock: "Controls up to 16–64 Elevator Floors via Guest Card",
+                mortise: "Elevator Cabin / Control Room DIN Mount",
+                usage: "Multi-Storey Hotels & Commercial Towers",
+                techTags: ["Mortise / Accessory", "Mifare 13.56MHz"],
+                desc: "Restricts elevator floor buttons so guests can only access the lobby, amenities, and their assigned room floor."
+            },
+            {
+                code: "C01-C05",
+                name: "RFID Hotel Key Cards, Keyfobs & Silicone Wristbands",
+                category: "System Accessories & Mortises",
+                material: "PVC Card / Epoxy Keyfob / Medical Silicone",
+                colors: "Custom Full-Color Print, Blue, Black, Red",
+                unlock: "Mifare 1K (13.56MHz) or Temic T5577 (125KHz)",
+                mortise: "ISO CR80 (85.5×54mm) / Keytag / Wristband",
+                usage: "Hotels, Water Parks, Resorts, Gyms",
+                techTags: ["Mortise / Accessory", "Mifare 13.56MHz", "Temic 125KHz"],
+                desc: "Custom-printed hotel PVC cards (C01), transparent epoxy keyfobs (C02/C03), and waterproof resort wristbands (C04/C05)."
+            },
+            {
+                code: "PCB02",
+                name: "Replacement Smart Lock Mainboard & Clutch Assembly",
+                category: "System Accessories & Mortises",
+                material: "Moisture-Proof Conformal Coated PCB",
+                colors: "Green / Blue PCB",
+                unlock: "Mifare / Temic / TTHotel Spare Control Module",
+                mortise: "OEM Replacement Spare Part",
+                usage: "Hotel Maintenance & Spare Stock",
+                techTags: ["Mortise / Accessory"],
+                desc: "Genuine replacement electronic mainboard and motor clutch unit for rapid hotel maintenance."
+            },
+            {
+                code: "2# Short Mortise",
+                name: "2# Compact Hotel Mortise Lock Body",
+                category: "System Accessories & Mortises",
+                material: "304 Stainless Steel Faceplate + Alloy Latch",
+                colors: "Brushed Silver, Black, Gold",
+                unlock: "Anti-Card Guard Latch + Deadbolt + Anti-Panic Handle",
+                mortise: "Backset 55mm / 60mm, Compact Body",
+                usage: "Standard Hotel Room Wooden Doors",
+                techTags: ["Mortise / Accessory"],
+                desc: "Compact 2# hotel mortise featuring anti-pry guard bolt and instant interior handle egress."
+            },
+            {
+                code: "1# Big Mortise",
+                name: "1# Heavy-Duty ANSI 5-Latch Hotel Mortise",
+                category: "System Accessories & Mortises",
+                material: "304 Stainless Steel",
+                colors: "Brushed Silver, Gold, Black",
+                unlock: "5-Latch Security + Deadbolt + Anti-Card Tongue",
+                mortise: "ANSI Standard Heavy Mortise (Backset 60/70mm)",
+                usage: "4-5 Star Hotels, Fire-Rated & Heavy Doors",
+                techTags: ["Mortise / Accessory"],
+                desc: "Full-size ANSI 5-latch hotel mortise engineered for maximum mechanical strength and fire-door compliance."
+            },
+            {
+                code: "2# SS304 Mortise",
+                name: "2# Full 304 Stainless Steel Silent Hotel Mortise",
+                category: "System Accessories & Mortises",
+                material: "100% 304 Stainless Steel",
+                colors: "Brushed Silver, Matte Black, PVD Gold",
+                unlock: "Silent Latch + Deadbolt + Anti-Panic Egress",
+                mortise: "2# Standard Dimensions (SS304 Internal Parts)",
+                usage: "Coastal Resorts & Premium Hotels",
+                techTags: ["Mortise / Accessory"],
+                desc: "All-stainless internal and external construction preventing rust in high-humidity regions."
+            },
+            {
+                code: "EU Mortise",
+                name: "European Standard Mortise (3585 / 4585 / 6085)",
+                category: "System Accessories & Mortises",
+                material: "304 Stainless Steel",
+                colors: "Silver, Matte Black",
+                unlock: "Lift-Up Deadbolt / Single-Action Latch",
+                mortise: "3585, 4585, 5085, 6085, 6068 Sizes",
+                usage: "Aluminum, UPVC, Metal & Wooden Doors",
+                techTags: ["Mortise / Accessory"],
+                desc: "Complete range of European backset mortise bodies (35mm, 45mm, 50mm, 60mm) for slim and standard doors."
+            }
+        ];
+
+        const CATEGORIES = [
+            "All Products",
+            "App & Smart Hotel Locks",
+            "Smart Face & Fingerprint Locks",
+            "Mifare & Temic Hotel Locks",
+            "Split & Automatic Hotel Locks",
+            "Energy Saving Switches",
+            "DND Doorplates & Control Switches",
+            "System Accessories & Mortises"
+        ];
+
+        // State management
+        let activeCategory = "All Products";
+        let searchQuery = "";
+        let activeUnlockFilter = "ALL";
+        let uploadedImagesMap = {}; // Stores DataURLs keyed by product code
+        let currentUploadTargetCode = null;
+        let currentModalProduct = null;
+
+        const WHATSAPP_NUMBER = "918487948220";
+
+        // Initialize Page
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+            document.getElementById("hero-total-count").textContent = PRODUCTS.length + "+";
+            document.getElementById("stat-model-count").textContent = PRODUCTS.length;
+            document.getElementById("total-count").textContent = PRODUCTS.length;
+
+            renderCategoryTabs();
+            renderProducts();
+
+            // Event Listeners
+            const searchInput = document.getElementById("search-input");
+            searchInput.addEventListener("input", (e) => {
+                searchQuery = e.target.value.trim().toLowerCase();
+                document.getElementById("clear-search-btn").classList.toggle("hidden", !searchQuery);
+                renderProducts();
+            });
+
+            document.getElementById("unlock-filter").addEventListener("change", (e) => {
+                activeUnlockFilter = e.target.value;
+                renderProducts();
+            });
+
+            // Shared FileReader Uploader
+            const fileInput = document.getElementById("shared-image-uploader");
+            fileInput.addEventListener("change", (e) => {
+                const file = e.target.files[0];
+                if (!file || !currentUploadTargetCode) return;
+
+                const reader = new FileReader();
+                reader.onload = function(evt) {
+                    uploadedImagesMap[currentUploadTargetCode] = evt.target.result;
+                    renderProducts();
+                    if (currentModalProduct && currentModalProduct.code === currentUploadTargetCode) {
+                        updateModalImageArea(currentModalProduct);
+                    }
+                    showToast(`Preview image loaded for ${currentUploadTargetCode}`);
+                };
+                reader.readAsDataURL(file);
+                fileInput.value = "";
+            });
+
+            // Close modals on Escape key
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") {
+                    closeSpecModal();
+                    closePhotoGuideModal();
+                }
+            });
+        });
+
+        function sanitizeFilename(code) {
+            return code.replace(/[^a-zA-Z0-9_-]/g, "_") + ".jpg";
+        }
+
+        function getWhatsAppLink(product) {
+            const msg = `Hello V & M Sanitary,\nI would like to request a quote for:\n• *Model Code:* ${product.code}\n• *Product:* ${product.name}\n• *Category:* ${product.category}\n• *Specs:* ${product.material} | ${product.unlock}\nPlease share best INR pricing & availability.`;
+            return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+        }
+
+        function renderCategoryTabs() {
+            const container = document.getElementById("category-tabs");
+            container.innerHTML = CATEGORIES.map(cat => {
+                const count = cat === "All Products"
+                    ? PRODUCTS.length
+                    : PRODUCTS.filter(p => p.category === cat).length;
+                const isActive = activeCategory === cat;
+                return `
+                    <button onclick="setCategory('${cat.replace(/'/g, "\\'")}')"
+                        class="shrink-0 px-3.5 py-2 rounded-xl text-xs font-bold transition flex items-center gap-1.5 border ${
+                            isActive
+                                ? "bg-vmNavy text-white border-vmNavy shadow-sm"
+                                : "bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100 hover:text-vmNavy"
+                        }">
+                        <span>${cat}</span>
+                        <span class="px-1.5 py-0.5 rounded-full text-[10px] ${
+                            isActive ? "bg-white/20 text-white" : "bg-slate-200 text-slate-700"
+                        }">${count}</span>
+                    </button>
+                `;
+            }).join("");
+        }
+
+        function setCategory(cat) {
+            activeCategory = cat;
+            document.getElementById("active-category-label").textContent = cat;
+            renderCategoryTabs();
+            renderProducts();
+        }
+
+        function selectCategoryFromFooter(cat) {
+            setCategory(cat);
+            document.getElementById("catalogue-section").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function clearSearch() {
+            searchQuery = "";
+            document.getElementById("search-input").value = "";
+            document.getElementById("clear-search-btn").classList.add("hidden");
+            renderProducts();
+        }
+
+        function resetAllFilters() {
+            activeCategory = "All Products";
+            searchQuery = "";
+            activeUnlockFilter = "ALL";
+            document.getElementById("search-input").value = "";
+            document.getElementById("clear-search-btn").classList.add("hidden");
+            document.getElementById("unlock-filter").value = "ALL";
+            document.getElementById("active-category-label").textContent = "All Categories";
+            renderCategoryTabs();
+            renderProducts();
+        }
+
+        function getFilteredProducts() {
+            return PRODUCTS.filter(p => {
+                const matchesCat = activeCategory === "All Products" || p.category === activeCategory;
+                const matchesUnlock = activeUnlockFilter === "ALL" || (p.techTags && p.techTags.includes(activeUnlockFilter));
+                const matchesSearch = !searchQuery ||
+                    p.code.toLowerCase().includes(searchQuery) ||
+                    p.name.toLowerCase().includes(searchQuery) ||
+                    p.category.toLowerCase().includes(searchQuery) ||
+                    p.material.toLowerCase().includes(searchQuery) ||
+                    p.unlock.toLowerCase().includes(searchQuery) ||
+                    p.mortise.toLowerCase().includes(searchQuery) ||
+                    p.usage.toLowerCase().includes(searchQuery);
+                return matchesCat && matchesUnlock && matchesSearch;
+            });
+        }
+
+        function triggerCardUpload(code, event) {
+            if (event) event.stopPropagation();
+            currentUploadTargetCode = code;
+            document.getElementById("shared-image-uploader").click();
+        }
+
+        function removeUploadedImage(code, event) {
+            if (event) event.stopPropagation();
+            delete uploadedImagesMap[code];
+            renderProducts();
+            if (currentModalProduct && currentModalProduct.code === code) {
+                updateModalImageArea(currentModalProduct);
+            }
+            showToast(`Reset placeholder for ${code}`);
+        }
+
+        function renderProducts() {
+            const filtered = getFilteredProducts();
+            const grid = document.getElementById("product-grid");
+            const emptyState = document.getElementById("empty-state");
+
+            document.getElementById("visible-count").textContent = filtered.length;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = "";
+                emptyState.classList.remove("hidden");
+                return;
+            }
+
+            emptyState.classList.add("hidden");
+
+            grid.innerHTML = filtered.map((p, idx) => {
+                const imgFile = sanitizeFilename(p.code);
+                const uploadedSrc = uploadedImagesMap[p.code];
+                const waUrl = getWhatsAppLink(p);
+                const safeCodeArg = p.code.replace(/'/g, "\\'");
+
+                return `
+                <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-vmNavy/40 transition-all flex flex-col overflow-hidden group">
+                    <!-- Top Header Strip -->
+                    <div class="px-4 pt-3.5 pb-2 flex items-center justify-between gap-2">
+                        <span class="px-2.5 py-1 rounded-lg bg-vmNavy text-white font-display font-extrabold text-xs tracking-wide shadow-xs">
+                            ${p.code}
+                        </span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 truncate max-w-[165px]" title="${p.category}">
+                            ${p.category}
+                        </span>
+                    </div>
+
+                    <!-- Interactive Image Placeholder / Live Preview Box -->
+                    <div class="px-4">
+                        <div onclick="triggerCardUpload('${safeCodeArg}', event)"
+                             title="Click to upload product image for ${p.code} | Deployment tag: <img src=&quot;images/${imgFile}&quot; alt=&quot;${p.code}&quot;>"
+                             class="relative h-48 rounded-xl border-2 ${uploadedSrc ? 'border-emerald-400 bg-white' : 'border-dashed border-slate-300 blueprint-grid bg-slate-50 hover:border-vmRed hover:bg-red-50/30'} flex flex-col items-center justify-center p-3 text-center cursor-pointer transition overflow-hidden">
+                            
+                            ${uploadedSrc ? `
+                                <img src="${uploadedSrc}" alt="${p.code} - ${p.name}" class="w-full h-full object-contain rounded-lg">
+                                <div class="absolute inset-x-0 bottom-0 bg-slate-900/75 text-white text-[10px] py-1 px-2 flex items-center justify-between opacity-0 group-hover:opacity-100 transition">
+                                    <span><i class="fa-solid fa-pen mr-1"></i>Change Photo</span>
+                                    <button onclick="removeUploadedImage('${safeCodeArg}', event)" class="text-red-300 hover:text-red-200 font-bold">Reset</button>
+                                </div>
+                            ` : `
+                                <div class="w-11 h-11 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center text-vmNavy group-hover:text-vmRed group-hover:scale-110 transition mb-2">
+                                    <i class="fa-solid fa-camera-retro text-lg"></i>
+                                </div>
+                                <div class="font-display font-extrabold text-xs text-slate-800 tracking-tight">
+                                    IMAGE PLACEHOLDER: <span class="text-vmRed">${p.code}</span>
+                                </div>
+                                <div class="text-[11px] text-slate-500 mt-0.5">
+                                    Click to upload &amp; preview photo
+                                </div>
+                                <div class="mt-2 px-2 py-0.5 rounded bg-white/90 border border-slate-200 text-[10px] font-mono text-slate-600">
+                                    images/${imgFile}
+                                </div>
+                            `}
+                        </div>
+                    </div>
+
+                    <!-- Card Content -->
+                    <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <h3 class="font-display font-bold text-sm text-slate-900 leading-snug line-clamp-2 group-hover:text-vmNavy transition">
+                                ${p.name}
+                            </h3>
+                            <div class="mt-2.5 space-y-1.5 text-xs text-slate-600">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-shield text-vmNavy/70 mt-0.5 w-3.5 text-center"></i>
+                                    <span class="truncate" title="${p.material}"><strong>Material:</strong> ${p.material}</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-key text-vmRed/80 mt-0.5 w-3.5 text-center"></i>
+                                    <span class="line-clamp-2" title="${p.unlock}"><strong>Unlock:</strong> ${p.unlock}</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-door-open text-slate-400 mt-0.5 w-3.5 text-center"></i>
+                                    <span class="truncate" title="${p.mortise}"><strong>Spec:</strong> ${p.mortise}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Tag & Dual CTAs -->
+                        <div class="pt-2 border-t border-slate-100 space-y-2">
+                            <div class="flex items-center justify-between text-[11px]">
+                                <span class="font-bold text-vmRed bg-vmRed-light px-2 py-0.5 rounded">Get Best Price / Bulk Quote</span>
+                                <button onclick="openSpecModal('${safeCodeArg}')" class="font-bold text-vmNavy hover:underline">
+                                    View Full Specs &rarr;
+                                </button>
+                            </div>
+                            <a href="${waUrl}" target="_blank" rel="noopener"
+                               class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 px-3 rounded-xl shadow-xs transition flex items-center justify-center gap-1.5">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span>Request Quote on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                `;
+            }).join("");
+        }
+
+        // Spec Modal Logic
+        function openSpecModal(code) {
+            const product = PRODUCTS.find(p => p.code === code);
+            if (!product) return;
+            currentModalProduct = product;
+
+            const imgFile = sanitizeFilename(product.code);
+            document.getElementById("modal-category-badge").textContent = product.category;
+            document.getElementById("modal-title").textContent = `${product.code} — ${product.name}`;
+            document.getElementById("modal-description").textContent = product.desc;
+            document.getElementById("modal-code").textContent = product.code;
+            document.getElementById("modal-material").textContent = product.material;
+            document.getElementById("modal-colors").textContent = product.colors;
+            document.getElementById("modal-unlock").textContent = product.unlock;
+            document.getElementById("modal-mortise").textContent = product.mortise;
+            document.getElementById("modal-usage").textContent = product.usage;
+            document.getElementById("modal-img-tag").textContent = `<img src="images/${imgFile}" alt="${product.code}">`;
+            document.getElementById("modal-whatsapp-btn").href = getWhatsAppLink(product);
+
+            updateModalImageArea(product);
+
+            const modal = document.getElementById("spec-modal");
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+        }
+
+        function updateModalImageArea(product) {
+            const container = document.getElementById("modal-image-container");
+            const uploadedSrc = uploadedImagesMap[product.code];
+            const imgFile = sanitizeFilename(product.code);
+
+            if (uploadedSrc) {
+                container.innerHTML = `
+                    <img src="${uploadedSrc}" alt="${product.code}" class="w-full h-full object-contain rounded-xl">
+                    <span class="absolute bottom-2 bg-slate-900/80 text-white text-[10px] px-2.5 py-1 rounded-full">Click to replace photo</span>
+                `;
+            } else {
+                container.innerHTML = `
+                    <div class="w-12 h-12 rounded-full bg-white shadow border border-slate-200 flex items-center justify-center text-vmRed mb-2">
+                        <i class="fa-solid fa-cloud-arrow-up text-xl"></i>
+                    </div>
+                    <div class="font-display font-extrabold text-xs text-slate-800">IMAGE PLACEHOLDER: <span class="text-vmRed">${product.code}</span></div>
+                    <p class="text-[11px] text-slate-500 mt-1">Click to upload photo preview</p>
+                    <span class="mt-2 text-[10px] font-mono bg-white px-2 py-0.5 rounded border border-slate-200 text-slate-600">images/${imgFile}</span>
+                `;
+            }
+        }
+
+        function triggerModalUpload() {
+            if (!currentModalProduct) return;
+            triggerCardUpload(currentModalProduct.code);
+        }
+
+        function closeSpecModal() {
+            const modal = document.getElementById("spec-modal");
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+            currentModalProduct = null;
+        }
+
+        function copyImgTag() {
+            const text = document.getElementById("modal-img-tag").textContent;
+            const tempInput = document.createElement("input");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            showToast(`Copied: ${text}`);
+        }
+
+        // Photo Guide Modal
+        function openPhotoGuideModal() {
+            const m = document.getElementById("guide-modal");
+            m.classList.remove("hidden");
+            m.classList.add("flex");
+        }
+        function closePhotoGuideModal() {
+            const m = document.getElementById("guide-modal");
+            m.classList.add("hidden");
+            m.classList.remove("flex");
+        }
+
+        // Quick Footer/Banner Custom WhatsApp Form
+        function sendCustomWhatsAppInquiry() {
+            const projectType = document.getElementById("quick-project-type").value;
+            const notes = document.getElementById("quick-project-notes").value.trim() || "Complete Smart Locks & Hotel Access Control quotation";
+            const msg = `Hello V & M Sanitary (Ahmedabad),\nI have a B2B/Project inquiry:\n• *Project Type:* ${projectType}\n• *Requirement:* ${notes}\nPlease share your best wholesale/project quote.`;
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+        }
+
+        // Toast Helper
+        let toastTimer = null;
+        function showToast(message) {
+            const toast = document.getElementById("toast-msg");
+            document.getElementById("toast-text").textContent = message;
+            toast.classList.remove("hidden");
+            toast.classList.add("flex");
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.add("hidden");
+                toast.classList.remove("flex");
+            }, 2800);
+        }
+    </script>
+</body>
+</html>
