@@ -200,7 +200,7 @@
                 <!-- Search Input -->
                 <div class="md:col-span-6 relative">
                     <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
-                    <input type="text" id="search-input" placeholder="Search by Model Code (e.g. TT100, RF860, ZW718, SW01, DP05) or spec..." class="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-vmNavy focus:border-vmNavy transition">
+                    <input type="text" id="search-input" placeholder="Search by Model Code (e.g. TT1001, RF860, ZW718, SW01, DP05) or spec..." class="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-vmNavy focus:border-vmNavy transition">
                     <button id="clear-search-btn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-vmRed">
                         <i class="fa-solid fa-circle-xmark"></i>
                     </button>
@@ -262,7 +262,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <h3 class="font-display font-bold text-lg text-slate-800">No matching lock or accessory models found</h3>
-            <p class="text-sm text-slate-500 max-w-md mx-auto mt-1 mb-5">Try searching by another model code (e.g., TT100, RF860, ZW718, SW01, DP01) or reset your active category/technology filters.</p>
+            <p class="text-sm text-slate-500 max-w-md mx-auto mt-1 mb-5">Try searching by another model code (e.g., TT1001, RF860, ZW718, SW01, DP01) or reset your active category/technology filters.</p>
             <button onclick="resetAllFilters()" class="bg-vmNavy hover:bg-vmNavy-dark text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition">
                 Show All Catalogue Products
             </button>
@@ -484,7 +484,7 @@
                             <!-- Injected dynamically -->
                         </div>
                         <div class="mt-2 flex items-center justify-between text-[11px] text-slate-500 bg-slate-100 px-2.5 py-1.5 rounded-lg">
-                            <code id="modal-img-tag" class="font-mono text-vmNavy font-semibold truncate">&lt;img src="images/TT100.jpg"&gt;</code>
+                            <code id="modal-img-tag" class="font-mono text-vmNavy font-semibold truncate">&lt;img src="images/TT1001.png"&gt;</code>
                             <button onclick="copyImgTag()" class="text-vmRed hover:underline font-bold ml-2 shrink-0" title="Copy HTML img tag">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
@@ -553,7 +553,7 @@
                 <p>Every product card in this V &amp; M Sanitary catalogue includes a smart dual-mode image placeholder:</p>
                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2 text-xs">
                     <p><strong class="text-vmNavy">1. Live Browser Photo Preview:</strong> Click directly on any product card's placeholder box to select a photo from your computer or phone. It uses <code class="bg-slate-200 px-1 rounded">FileReader</code> to preview immediately on the card.</p>
-                    <p><strong class="text-vmNavy">2. Production Website Deployment:</strong> Create an <code class="bg-slate-200 px-1 rounded">images/</code> folder next to this HTML file and save each product image using its exact model code (e.g., <code class="bg-slate-200 px-1 rounded">images/TT100.jpg</code>, <code class="bg-slate-200 px-1 rounded">images/RF860.jpg</code>). Each card displays its exact <code class="bg-slate-200 px-1 rounded">&lt;img&gt;</code> filename for effortless deployment.</p>
+                    <p><strong class="text-vmNavy">2. Production Website Deployment:</strong> Create an <code class="bg-slate-200 px-1 rounded">images/</code> folder next to this HTML file and save each product image using its exact model code (e.g., <code class="bg-slate-200 px-1 rounded">images/TT1001.jpg</code>, <code class="bg-slate-200 px-1 rounded">images/RF860.jpg</code>). Each card displays its exact <code class="bg-slate-200 px-1 rounded">&lt;img&gt;</code> filename for effortless deployment.</p>
                 </div>
                 <div class="flex justify-end">
                     <button onclick="closePhotoGuideModal()" class="bg-vmNavy text-white font-bold text-xs px-5 py-2.5 rounded-xl">Got It</button>
@@ -579,7 +579,7 @@
         const PRODUCTS = [
             // 1. APP & SMART HOTEL LOCKS (TTHotel / TTLock) - 39 Models
             {
-                code: "TT100",
+                code: "TT1001",
                 name: "Classic Slim Smart Hotel Lock",
                 category: "App & Smart Hotel Locks",
                 material: "304 Stainless Steel",
